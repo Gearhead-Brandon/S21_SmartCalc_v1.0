@@ -70,6 +70,7 @@ gcov_open:
 	google-chrome s21_smart_calc.html
 
 dvi:
+	doxygen doc/Doxyfile
 	google-chrome doc/html/index.html
 
 dist:
