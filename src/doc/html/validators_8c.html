@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Smart calculator: Файл backend/validators.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Smart calculator
+   </div>
+   <div id="projectbrief">В этом проекте вы реализуете расширенную версию обычного калькулятора, который можно найти в стандартных приложениях каждой операционной системы на языке программирования C с использованием структурного программирования.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл validators.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Исходный файл с функциями-валидаторами  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="s21__smart__calc_8h_source.html">../s21_smart_calc.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:abaa5b02b862962edefd134240f376712" id="r_abaa5b02b862962edefd134240f376712"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validators_8c.html#abaa5b02b862962edefd134240f376712">validate_credit</a> (char *str)</td></tr>
+<tr class="memdesc:abaa5b02b862962edefd134240f376712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция валидации строки  <br /></td></tr>
+<tr class="separator:abaa5b02b862962edefd134240f376712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45331a5279514b1487b2c870a6ab2b88" id="r_a45331a5279514b1487b2c870a6ab2b88"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validators_8c.html#a45331a5279514b1487b2c870a6ab2b88">validate_rate_deposit</a> (char *str)</td></tr>
+<tr class="memdesc:a45331a5279514b1487b2c870a6ab2b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция валидации строки  <br /></td></tr>
+<tr class="separator:a45331a5279514b1487b2c870a6ab2b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adae97d36b8f15e8a0383f7702f2504e8" id="r_adae97d36b8f15e8a0383f7702f2504e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validators_8c.html#adae97d36b8f15e8a0383f7702f2504e8">validity_date</a> (char *str)</td></tr>
+<tr class="memdesc:adae97d36b8f15e8a0383f7702f2504e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция валидации даты в строке  <br /></td></tr>
+<tr class="separator:adae97d36b8f15e8a0383f7702f2504e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c6fb3da150f903898cfa32b4bcaad1" id="r_ae6c6fb3da150f903898cfa32b4bcaad1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validators_8c.html#ae6c6fb3da150f903898cfa32b4bcaad1">validity_check_dot</a> (char *str)</td></tr>
+<tr class="memdesc:ae6c6fb3da150f903898cfa32b4bcaad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция валидации строки, проверяющая есть ли что-то кроме цифр в строке  <br /></td></tr>
+<tr class="separator:ae6c6fb3da150f903898cfa32b4bcaad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Исходный файл с функциями-валидаторами </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="abaa5b02b862962edefd134240f376712" name="abaa5b02b862962edefd134240f376712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa5b02b862962edefd134240f376712">&#9670;&#160;</a></span>validate_credit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validate_credit </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция валидации строки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки</dd></dl>
+<p>Проверяет на то, есть ли в строке что-то кроме цифр и точки. </p>
+
+</div>
+</div>
+<a id="a45331a5279514b1487b2c870a6ab2b88" name="a45331a5279514b1487b2c870a6ab2b88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45331a5279514b1487b2c870a6ab2b88">&#9670;&#160;</a></span>validate_rate_deposit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validate_rate_deposit </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция валидации строки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки</dd></dl>
+<p>Проверяет на то, есть ли в строке что-то кроме цифр, плюса, минуса или точки. </p>
+
+</div>
+</div>
+<a id="ae6c6fb3da150f903898cfa32b4bcaad1" name="ae6c6fb3da150f903898cfa32b4bcaad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c6fb3da150f903898cfa32b4bcaad1">&#9670;&#160;</a></span>validity_check_dot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validity_check_dot </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция валидации строки, проверяющая есть ли что-то кроме цифр в строке </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="adae97d36b8f15e8a0383f7702f2504e8" name="adae97d36b8f15e8a0383f7702f2504e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adae97d36b8f15e8a0383f7702f2504e8">&#9670;&#160;</a></span>validity_date()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validity_date </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция валидации даты в строке </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

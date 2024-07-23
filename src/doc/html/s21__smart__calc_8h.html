@@ -1,0 +1,2713 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Smart calculator: Файл s21_smart_calc.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Smart calculator
+   </div>
+   <div id="projectbrief">В этом проекте вы реализуете расширенную версию обычного калькулятора, который можно найти в стандартных приложениях каждой операционной системы на языке программирования C с использованием структурного программирования.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Структуры данных</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл s21_smart_calc.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Заголовочный файл с описанием структур, перечислений и прототопипов.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;gtk/gtk.h&gt;</code><br />
+</div>
+<p><a href="s21__smart__calc_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Структуры данных</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_deposit_calc.html">DepositCalc</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура, описывающая депозитный калькулятор  <a href="struct_deposit_calc.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_credit_calc.html">CreditCalc</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура, описывающая кредитный калькулятор  <a href="struct_credit_calc.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_graph__of__func.html">Graph_of_func</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура, описывающая график функции  <a href="struct_graph__of__func.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcalculator.html">calculator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура, описывающая умный калькулятор  <a href="structcalculator.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_node.html">Node</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура, описывающая узел стека и очереди  <a href="struct_node.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_queue.html">Queue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура, описывающая очередь  <a href="struct_queue.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a369266c24eacffb87046522897a570d5" id="r_a369266c24eacffb87046522897a570d5"><td class="memItemLeft" align="right" valign="top"><a id="a369266c24eacffb87046522897a570d5" name="a369266c24eacffb87046522897a570d5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_GNU_SOURCE</b></td></tr>
+<tr class="separator:a369266c24eacffb87046522897a570d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cfd3aa62338d12609f6d65bce97e9cd" id="r_a3cfd3aa62338d12609f6d65bce97e9cd"><td class="memItemLeft" align="right" valign="top"><a id="a3cfd3aa62338d12609f6d65bce97e9cd" name="a3cfd3aa62338d12609f6d65bce97e9cd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ROWS</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a3cfd3aa62338d12609f6d65bce97e9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c6c391fc11d106e9909f0401b255b1" id="r_a06c6c391fc11d106e9909f0401b255b1"><td class="memItemLeft" align="right" valign="top"><a id="a06c6c391fc11d106e9909f0401b255b1" name="a06c6c391fc11d106e9909f0401b255b1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COLUMNS</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a06c6c391fc11d106e9909f0401b255b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af750627eac706c0414b0a144153e2a93" id="r_af750627eac706c0414b0a144153e2a93"><td class="memItemLeft" align="right" valign="top"><a id="af750627eac706c0414b0a144153e2a93" name="af750627eac706c0414b0a144153e2a93"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COLUMNS7</b>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:af750627eac706c0414b0a144153e2a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2eb04dcc273b8e5831e18fa64e02afb" id="r_ac2eb04dcc273b8e5831e18fa64e02afb"><td class="memItemLeft" align="right" valign="top"><a id="ac2eb04dcc273b8e5831e18fa64e02afb" name="ac2eb04dcc273b8e5831e18fa64e02afb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>S21_INFINITY</b>&#160;&#160;&#160;(1.0f / 0.0f)</td></tr>
+<tr class="separator:ac2eb04dcc273b8e5831e18fa64e02afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3594aca404dcf9e10325bdf364b9efe" id="r_ac3594aca404dcf9e10325bdf364b9efe"><td class="memItemLeft" align="right" valign="top"><a id="ac3594aca404dcf9e10325bdf364b9efe" name="ac3594aca404dcf9e10325bdf364b9efe"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>S21_NEGATIVE_INFINITY</b>&#160;&#160;&#160;(-1.0f / 0.0f)</td></tr>
+<tr class="separator:ac3594aca404dcf9e10325bdf364b9efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c1cf31918745247ead54f6d1ea91b76" id="r_a9c1cf31918745247ead54f6d1ea91b76"><td class="memItemLeft" align="right" valign="top"><a id="a9c1cf31918745247ead54f6d1ea91b76" name="a9c1cf31918745247ead54f6d1ea91b76"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>s21_is_nan</b>(x)&#160;&#160;&#160;(x != x)</td></tr>
+<tr class="separator:a9c1cf31918745247ead54f6d1ea91b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd54bb53be489e048422c8e39d81ded" id="r_aafd54bb53be489e048422c8e39d81ded"><td class="memItemLeft" align="right" valign="top"><a id="aafd54bb53be489e048422c8e39d81ded" name="aafd54bb53be489e048422c8e39d81ded"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>s21_is_inf</b>(x)&#160;&#160;&#160;(x == S21_INFINITY || x == S21_NEGATIVE_INFINITY)</td></tr>
+<tr class="separator:aafd54bb53be489e048422c8e39d81ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a3b09f37e675bcd48a01bf22155996872" id="r_a3b09f37e675bcd48a01bf22155996872"><td class="memItemLeft" align="right" valign="top"><a id="a3b09f37e675bcd48a01bf22155996872" name="a3b09f37e675bcd48a01bf22155996872"></a>
+typedef struct <a class="el" href="struct_node.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Node</b></td></tr>
+<tr class="separator:a3b09f37e675bcd48a01bf22155996872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a43637aae427864cd298f44506f53b347" id="r_a43637aae427864cd298f44506f53b347"><td class="memItemLeft" align="right" valign="top"><a id="a43637aae427864cd298f44506f53b347" name="a43637aae427864cd298f44506f53b347"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a43637aae427864cd298f44506f53b347">start_date</a> { <b>дней</b>
+, <b>месяцев</b>
+, <b>лет</b>
+ }</td></tr>
+<tr class="memdesc:a43637aae427864cd298f44506f53b347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перечисление типов срока размещения депозита <br /></td></tr>
+<tr class="separator:a43637aae427864cd298f44506f53b347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45dbcedb3525fba70f85aee15e2b98c5" id="r_a45dbcedb3525fba70f85aee15e2b98c5"><td class="memItemLeft" align="right" valign="top"><a id="a45dbcedb3525fba70f85aee15e2b98c5" name="a45dbcedb3525fba70f85aee15e2b98c5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a45dbcedb3525fba70f85aee15e2b98c5">interest_rate</a> { <b>фиксированная</b>
+, <b>от_суммы</b>
+, <b>от_срока</b>
+ }</td></tr>
+<tr class="memdesc:a45dbcedb3525fba70f85aee15e2b98c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перечисление типов процентной ставки депозита <br /></td></tr>
+<tr class="separator:a45dbcedb3525fba70f85aee15e2b98c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27769480aea76a520a236e3be87be08f" id="r_a27769480aea76a520a236e3be87be08f"><td class="memItemLeft" align="right" valign="top"><a id="a27769480aea76a520a236e3be87be08f" name="a27769480aea76a520a236e3be87be08f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a27769480aea76a520a236e3be87be08f">frequency_of_paymnets</a> { <br />
+&#160;&#160;<b>каждый_день</b>
+, <b>каждую_неделю</b>
+, <b>раз_в_месяц</b>
+, <b>раз_в_квартал</b>
+, <br />
+&#160;&#160;<b>раз_в_полгода</b>
+, <b>раз_в_год</b>
+, <b>в_конце_срока</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a27769480aea76a520a236e3be87be08f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перечисление типов периодичности выплат/капитализации <br /></td></tr>
+<tr class="separator:a27769480aea76a520a236e3be87be08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b995b319b34dfd1c00ae527732f2e8" id="r_ad3b995b319b34dfd1c00ae527732f2e8"><td class="memItemLeft" align="right" valign="top"><a id="ad3b995b319b34dfd1c00ae527732f2e8" name="ad3b995b319b34dfd1c00ae527732f2e8"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#ad3b995b319b34dfd1c00ae527732f2e8">replenishment_and_cut</a> { <br />
+&#160;&#160;<b>_разовое</b>
+, <b>_раз_в_месяц</b>
+, <b>_раз_в_2_месяца</b>
+, <b>_раз_в_квартал</b>
+, <br />
+&#160;&#160;<b>_раз_в_полгода</b>
+, <b>_раз_в_год</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:ad3b995b319b34dfd1c00ae527732f2e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перечисление типов периодичности пополнений/снятий <br /></td></tr>
+<tr class="separator:ad3b995b319b34dfd1c00ae527732f2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aacb003f4d26c70bd5c5a535ba5048b1f" id="r_aacb003f4d26c70bd5c5a535ba5048b1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#aacb003f4d26c70bd5c5a535ba5048b1f">from_infix_to_postfix</a> (char *str, char *x, <a class="el" href="struct_queue.html">Queue</a> *queue)</td></tr>
+<tr class="memdesc:aacb003f4d26c70bd5c5a535ba5048b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевод выражения из инфиксной нотации в постфиксную в очередь  <br /></td></tr>
+<tr class="separator:aacb003f4d26c70bd5c5a535ba5048b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3523526e17d6bce0b1e4a0075a7bc76a" id="r_a3523526e17d6bce0b1e4a0075a7bc76a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a3523526e17d6bce0b1e4a0075a7bc76a">from_postfix_to_double</a> (<a class="el" href="struct_queue.html">Queue</a> *queue, char *x, double *result)</td></tr>
+<tr class="memdesc:a3523526e17d6bce0b1e4a0075a7bc76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация вычисления выражения в постфиксной нотации  <br /></td></tr>
+<tr class="separator:a3523526e17d6bce0b1e4a0075a7bc76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43376cd734ffb9bd493b105e6857316d" id="r_a43376cd734ffb9bd493b105e6857316d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a43376cd734ffb9bd493b105e6857316d">get_instruction</a> (char *last, char *current)</td></tr>
+<tr class="memdesc:a43376cd734ffb9bd493b105e6857316d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение варианта действия со стеком и очередью  <br /></td></tr>
+<tr class="separator:a43376cd734ffb9bd493b105e6857316d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9628c015202acec78c3644ad5a524eb" id="r_ab9628c015202acec78c3644ad5a524eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#ab9628c015202acec78c3644ad5a524eb">get_index</a> (char *operation)</td></tr>
+<tr class="memdesc:ab9628c015202acec78c3644ad5a524eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поиск индекса функции  <br /></td></tr>
+<tr class="separator:ab9628c015202acec78c3644ad5a524eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28881adb91e5d6e8f1f8270f33061ba7" id="r_a28881adb91e5d6e8f1f8270f33061ba7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a28881adb91e5d6e8f1f8270f33061ba7">calc_two_double</a> (double *arr, char *operation)</td></tr>
+<tr class="memdesc:a28881adb91e5d6e8f1f8270f33061ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Берет два числп из массива и выполняет операцию  <br /></td></tr>
+<tr class="separator:a28881adb91e5d6e8f1f8270f33061ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb3c59fa8ed77fd91310c0ad815f314" id="r_a9bb3c59fa8ed77fd91310c0ad815f314"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a9bb3c59fa8ed77fd91310c0ad815f314">calc_func_double</a> (double *arr, char *operation)</td></tr>
+<tr class="memdesc:a9bb3c59fa8ed77fd91310c0ad815f314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Берет два число из массива и выполняет операцию  <br /></td></tr>
+<tr class="separator:a9bb3c59fa8ed77fd91310c0ad815f314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0521043df46dcd93955249434530093d" id="r_a0521043df46dcd93955249434530093d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a0521043df46dcd93955249434530093d">is_arithmetic</a> (char sym)</td></tr>
+<tr class="memdesc:a0521043df46dcd93955249434530093d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка на то , является ли символ арифметическим  <br /></td></tr>
+<tr class="separator:a0521043df46dcd93955249434530093d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef960b87b1a81be332a09a682d1625a9" id="r_aef960b87b1a81be332a09a682d1625a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#aef960b87b1a81be332a09a682d1625a9">validity_check_x</a> (char *str)</td></tr>
+<tr class="memdesc:aef960b87b1a81be332a09a682d1625a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка числа в строке на корректность  <br /></td></tr>
+<tr class="separator:aef960b87b1a81be332a09a682d1625a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc1797daa04d0982f4270f3b082ff01" id="r_acfc1797daa04d0982f4270f3b082ff01"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#acfc1797daa04d0982f4270f3b082ff01">validity_check</a> (char *str, int *have_x)</td></tr>
+<tr class="memdesc:acfc1797daa04d0982f4270f3b082ff01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка выражения на соотвествие инфиксной нотации  <br /></td></tr>
+<tr class="separator:acfc1797daa04d0982f4270f3b082ff01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16597d69f4371dfd47b8e5f9adcb4e69" id="r_a16597d69f4371dfd47b8e5f9adcb4e69"><td class="memItemLeft" align="right" valign="top"><a id="a16597d69f4371dfd47b8e5f9adcb4e69" name="a16597d69f4371dfd47b8e5f9adcb4e69"></a>
+<a class="el" href="struct_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>list_create</b> ()</td></tr>
+<tr class="separator:a16597d69f4371dfd47b8e5f9adcb4e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356c275a80ea3049b107e5856c00b276" id="r_a356c275a80ea3049b107e5856c00b276"><td class="memItemLeft" align="right" valign="top"><a id="a356c275a80ea3049b107e5856c00b276" name="a356c275a80ea3049b107e5856c00b276"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>is_empty_stack</b> (<a class="el" href="struct_node.html">Node</a> *list)</td></tr>
+<tr class="separator:a356c275a80ea3049b107e5856c00b276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d7345af34caa6921e7436f4c3c339d3" id="r_a5d7345af34caa6921e7436f4c3c339d3"><td class="memItemLeft" align="right" valign="top"><a id="a5d7345af34caa6921e7436f4c3c339d3" name="a5d7345af34caa6921e7436f4c3c339d3"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>peek_stack</b> (struct <a class="el" href="struct_node.html">Node</a> *list)</td></tr>
+<tr class="separator:a5d7345af34caa6921e7436f4c3c339d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af105c48c907c182eb52d3c707679e96b" id="r_af105c48c907c182eb52d3c707679e96b"><td class="memItemLeft" align="right" valign="top"><a id="af105c48c907c182eb52d3c707679e96b" name="af105c48c907c182eb52d3c707679e96b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clear_stack</b> (struct <a class="el" href="struct_node.html">Node</a> **plist)</td></tr>
+<tr class="separator:af105c48c907c182eb52d3c707679e96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1abcd77c0e66fb7b978e2ddb03a39c8" id="r_ad1abcd77c0e66fb7b978e2ddb03a39c8"><td class="memItemLeft" align="right" valign="top"><a id="ad1abcd77c0e66fb7b978e2ddb03a39c8" name="ad1abcd77c0e66fb7b978e2ddb03a39c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>push</b> (<a class="el" href="struct_node.html">Node</a> **list, char *x)</td></tr>
+<tr class="separator:ad1abcd77c0e66fb7b978e2ddb03a39c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcb71c1cf97982f1459dc7db53193f75" id="r_abcb71c1cf97982f1459dc7db53193f75"><td class="memItemLeft" align="right" valign="top"><a id="abcb71c1cf97982f1459dc7db53193f75" name="abcb71c1cf97982f1459dc7db53193f75"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>pop</b> (<a class="el" href="struct_node.html">Node</a> **list)</td></tr>
+<tr class="separator:abcb71c1cf97982f1459dc7db53193f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4275bff575bd669ca54ee672508283d3" id="r_a4275bff575bd669ca54ee672508283d3"><td class="memItemLeft" align="right" valign="top"><a id="a4275bff575bd669ca54ee672508283d3" name="a4275bff575bd669ca54ee672508283d3"></a>
+struct <a class="el" href="struct_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>newNode</b> (char *item)</td></tr>
+<tr class="separator:a4275bff575bd669ca54ee672508283d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe954f26163546a2359da894de932a8f" id="r_afe954f26163546a2359da894de932a8f"><td class="memItemLeft" align="right" valign="top"><a id="afe954f26163546a2359da894de932a8f" name="afe954f26163546a2359da894de932a8f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>is_empty_queue</b> (<a class="el" href="struct_queue.html">Queue</a> *q)</td></tr>
+<tr class="separator:afe954f26163546a2359da894de932a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93ad1d026ecb1715a31c3b3f133b31f" id="r_ab93ad1d026ecb1715a31c3b3f133b31f"><td class="memItemLeft" align="right" valign="top"><a id="ab93ad1d026ecb1715a31c3b3f133b31f" name="ab93ad1d026ecb1715a31c3b3f133b31f"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>peek_queue</b> (<a class="el" href="struct_queue.html">Queue</a> *q)</td></tr>
+<tr class="separator:ab93ad1d026ecb1715a31c3b3f133b31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab50fa0955e93a37245a76bfacd30f4f2" id="r_ab50fa0955e93a37245a76bfacd30f4f2"><td class="memItemLeft" align="right" valign="top"><a id="ab50fa0955e93a37245a76bfacd30f4f2" name="ab50fa0955e93a37245a76bfacd30f4f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enqueue</b> (<a class="el" href="struct_queue.html">Queue</a> *q, char *item)</td></tr>
+<tr class="separator:ab50fa0955e93a37245a76bfacd30f4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f075765e17ec240d550a9493eb7286b" id="r_a8f075765e17ec240d550a9493eb7286b"><td class="memItemLeft" align="right" valign="top"><a id="a8f075765e17ec240d550a9493eb7286b" name="a8f075765e17ec240d550a9493eb7286b"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>dequeue</b> (<a class="el" href="struct_queue.html">Queue</a> *q)</td></tr>
+<tr class="separator:a8f075765e17ec240d550a9493eb7286b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e71eea53334ff97b3896d939d6c0490" id="r_a9e71eea53334ff97b3896d939d6c0490"><td class="memItemLeft" align="right" valign="top"><a id="a9e71eea53334ff97b3896d939d6c0490" name="a9e71eea53334ff97b3896d939d6c0490"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>print_queue</b> (<a class="el" href="struct_queue.html">Queue</a> *lst)</td></tr>
+<tr class="separator:a9e71eea53334ff97b3896d939d6c0490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a41c2f1bebce24bb805bca677cf571" id="r_af8a41c2f1bebce24bb805bca677cf571"><td class="memItemLeft" align="right" valign="top"><a id="af8a41c2f1bebce24bb805bca677cf571" name="af8a41c2f1bebce24bb805bca677cf571"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clear_queue</b> (<a class="el" href="struct_queue.html">Queue</a> *lst)</td></tr>
+<tr class="separator:af8a41c2f1bebce24bb805bca677cf571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb862fde523a63927de89cce406785e" id="r_a2cb862fde523a63927de89cce406785e"><td class="memItemLeft" align="right" valign="top"><a id="a2cb862fde523a63927de89cce406785e" name="a2cb862fde523a63927de89cce406785e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>activate</b> (GtkApplication *appl, <a class="el" href="structcalculator.html">calculator</a> *widget)</td></tr>
+<tr class="memdesc:a2cb862fde523a63927de89cce406785e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запуск приложения и создание окна <br /></td></tr>
+<tr class="separator:a2cb862fde523a63927de89cce406785e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cde1efe66ea298dcf92cb964b81ad55" id="r_a2cde1efe66ea298dcf92cb964b81ad55"><td class="memItemLeft" align="right" valign="top"><a id="a2cde1efe66ea298dcf92cb964b81ad55" name="a2cde1efe66ea298dcf92cb964b81ad55"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>include_css</b> ()</td></tr>
+<tr class="memdesc:a2cde1efe66ea298dcf92cb964b81ad55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Подключение CSS стилей <br /></td></tr>
+<tr class="separator:a2cde1efe66ea298dcf92cb964b81ad55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf169766b0b9071346f01182db2b503c" id="r_abf169766b0b9071346f01182db2b503c"><td class="memItemLeft" align="right" valign="top"><a id="abf169766b0b9071346f01182db2b503c" name="abf169766b0b9071346f01182db2b503c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>create_structure_app</b> (<a class="el" href="structcalculator.html">calculator</a> *widget)</td></tr>
+<tr class="memdesc:abf169766b0b9071346f01182db2b503c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание структуры приложения <br /></td></tr>
+<tr class="separator:abf169766b0b9071346f01182db2b503c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10be6b1042117028d8904fd2c1c66fc8" id="r_a10be6b1042117028d8904fd2c1c66fc8"><td class="memItemLeft" align="right" valign="top"><a id="a10be6b1042117028d8904fd2c1c66fc8" name="a10be6b1042117028d8904fd2c1c66fc8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>main_calc</b> (<a class="el" href="structcalculator.html">calculator</a> *widget)</td></tr>
+<tr class="memdesc:a10be6b1042117028d8904fd2c1c66fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание главного калькулятора <br /></td></tr>
+<tr class="separator:a10be6b1042117028d8904fd2c1c66fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3783cba974a144b09f8ce939bb396226" id="r_a3783cba974a144b09f8ce939bb396226"><td class="memItemLeft" align="right" valign="top"><a id="a3783cba974a144b09f8ce939bb396226" name="a3783cba974a144b09f8ce939bb396226"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>main_calc_create</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *widget)</td></tr>
+<tr class="separator:a3783cba974a144b09f8ce939bb396226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af36f0d52b83a9e9a63835ae80d6c2ec2" id="r_af36f0d52b83a9e9a63835ae80d6c2ec2"><td class="memItemLeft" align="right" valign="top"><a id="af36f0d52b83a9e9a63835ae80d6c2ec2" name="af36f0d52b83a9e9a63835ae80d6c2ec2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_menu</b> (<a class="el" href="structcalculator.html">calculator</a> *widget)</td></tr>
+<tr class="memdesc:af36f0d52b83a9e9a63835ae80d6c2ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание меню окна приложения <br /></td></tr>
+<tr class="separator:af36f0d52b83a9e9a63835ae80d6c2ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa5b02b862962edefd134240f376712" id="r_abaa5b02b862962edefd134240f376712"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#abaa5b02b862962edefd134240f376712">validate_credit</a> (char *str)</td></tr>
+<tr class="memdesc:abaa5b02b862962edefd134240f376712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция валидации строки  <br /></td></tr>
+<tr class="separator:abaa5b02b862962edefd134240f376712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c6fb3da150f903898cfa32b4bcaad1" id="r_ae6c6fb3da150f903898cfa32b4bcaad1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#ae6c6fb3da150f903898cfa32b4bcaad1">validity_check_dot</a> (char *str)</td></tr>
+<tr class="memdesc:ae6c6fb3da150f903898cfa32b4bcaad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция валидации строки, проверяющая есть ли что-то кроме цифр в строке  <br /></td></tr>
+<tr class="separator:ae6c6fb3da150f903898cfa32b4bcaad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45331a5279514b1487b2c870a6ab2b88" id="r_a45331a5279514b1487b2c870a6ab2b88"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a45331a5279514b1487b2c870a6ab2b88">validate_rate_deposit</a> (char *str)</td></tr>
+<tr class="memdesc:a45331a5279514b1487b2c870a6ab2b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция валидации строки  <br /></td></tr>
+<tr class="separator:a45331a5279514b1487b2c870a6ab2b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81c157389c78c1c4d4e1f71bb8a2b721" id="r_a81c157389c78c1c4d4e1f71bb8a2b721"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a81c157389c78c1c4d4e1f71bb8a2b721">init_matrix</a> (int rows, int columns, double array[rows][columns])</td></tr>
+<tr class="memdesc:a81c157389c78c1c4d4e1f71bb8a2b721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация статической матрицы  <br /></td></tr>
+<tr class="separator:a81c157389c78c1c4d4e1f71bb8a2b721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af451199e7f5ac033db33537882d6808d" id="r_af451199e7f5ac033db33537882d6808d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#af451199e7f5ac033db33537882d6808d">calculator_init</a> (<a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:af451199e7f5ac033db33537882d6808d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация структуры  <br /></td></tr>
+<tr class="separator:af451199e7f5ac033db33537882d6808d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3564d262440bd08c43ed5da42d058d2" id="r_ae3564d262440bd08c43ed5da42d058d2"><td class="memItemLeft" align="right" valign="top"><a id="ae3564d262440bd08c43ed5da42d058d2" name="ae3564d262440bd08c43ed5da42d058d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>create_buttons</b> (<a class="el" href="structcalculator.html">calculator</a> *widget)</td></tr>
+<tr class="memdesc:ae3564d262440bd08c43ed5da42d058d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание кнопок и подключение к ним стилей <br /></td></tr>
+<tr class="separator:ae3564d262440bd08c43ed5da42d058d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff469a1821260da2016d288b2aba62e6" id="r_aff469a1821260da2016d288b2aba62e6"><td class="memItemLeft" align="right" valign="top"><a id="aff469a1821260da2016d288b2aba62e6" name="aff469a1821260da2016d288b2aba62e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>attach_butons_to_grid</b> (<a class="el" href="structcalculator.html">calculator</a> *widget)</td></tr>
+<tr class="memdesc:aff469a1821260da2016d288b2aba62e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прикрепление кнопок к сетке <br /></td></tr>
+<tr class="separator:aff469a1821260da2016d288b2aba62e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e75163ec6fabf67e3eaeafeaa4ae937" id="r_a1e75163ec6fabf67e3eaeafeaa4ae937"><td class="memItemLeft" align="right" valign="top"><a id="a1e75163ec6fabf67e3eaeafeaa4ae937" name="a1e75163ec6fabf67e3eaeafeaa4ae937"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>connect_buttons</b> (<a class="el" href="structcalculator.html">calculator</a> *widget)</td></tr>
+<tr class="memdesc:a1e75163ec6fabf67e3eaeafeaa4ae937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Подключение функций к кнопкам и назначение главной отрисовочной функции <br /></td></tr>
+<tr class="separator:a1e75163ec6fabf67e3eaeafeaa4ae937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca633f9ebb7d5fa353aa0a2ce318ee1" id="r_afca633f9ebb7d5fa353aa0a2ce318ee1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#afca633f9ebb7d5fa353aa0a2ce318ee1">calculate</a> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:afca633f9ebb7d5fa353aa0a2ce318ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регулирование элементов обычного калькулятора  <br /></td></tr>
+<tr class="separator:afca633f9ebb7d5fa353aa0a2ce318ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac792767295f3079358196fc15d70940c" id="r_ac792767295f3079358196fc15d70940c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#ac792767295f3079358196fc15d70940c">add_to_buffer</a> (<a class="el" href="structcalculator.html">calculator</a> *calc, char *text, int *dont_check)</td></tr>
+<tr class="memdesc:ac792767295f3079358196fc15d70940c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавление к математическому выражению  <br /></td></tr>
+<tr class="separator:ac792767295f3079358196fc15d70940c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a232c82625781cc18290b47f8045ae589" id="r_a232c82625781cc18290b47f8045ae589"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a232c82625781cc18290b47f8045ae589">entering_numbers_and_operations</a> (<a class="el" href="structcalculator.html">calculator</a> *calc, char *text, int *dont_check, char last_char_input)</td></tr>
+<tr class="memdesc:a232c82625781cc18290b47f8045ae589"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ввод чисел и арифметических операций  <br /></td></tr>
+<tr class="separator:a232c82625781cc18290b47f8045ae589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6ec43babdd971e28e6a7826f855ccf2" id="r_af6ec43babdd971e28e6a7826f855ccf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#af6ec43babdd971e28e6a7826f855ccf2">function_input</a> (<a class="el" href="structcalculator.html">calculator</a> *calc, char *text, char last_char_input)</td></tr>
+<tr class="memdesc:af6ec43babdd971e28e6a7826f855ccf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ввод функций  <br /></td></tr>
+<tr class="separator:af6ec43babdd971e28e6a7826f855ccf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e316a34d437a017c0d69d975c692dc" id="r_af8e316a34d437a017c0d69d975c692dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#af8e316a34d437a017c0d69d975c692dc">input_X</a> (<a class="el" href="structcalculator.html">calculator</a> *calc, char *text)</td></tr>
+<tr class="memdesc:af8e316a34d437a017c0d69d975c692dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ввод значения X.  <br /></td></tr>
+<tr class="separator:af8e316a34d437a017c0d69d975c692dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3328216dba360afb3419de346b7303" id="r_a0d3328216dba360afb3419de346b7303"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a0d3328216dba360afb3419de346b7303">solve_expression</a> (<a class="el" href="structcalculator.html">calculator</a> *calc, int *error)</td></tr>
+<tr class="memdesc:a0d3328216dba360afb3419de346b7303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решение выражения  <br /></td></tr>
+<tr class="separator:a0d3328216dba360afb3419de346b7303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4693bd3cb78b1bbaa8bcf8b93ff91ad" id="r_af4693bd3cb78b1bbaa8bcf8b93ff91ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#af4693bd3cb78b1bbaa8bcf8b93ff91ad">erase_expression</a> (<a class="el" href="structcalculator.html">calculator</a> *calc, int *write)</td></tr>
+<tr class="memdesc:af4693bd3cb78b1bbaa8bcf8b93ff91ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обнуление выражения  <br /></td></tr>
+<tr class="separator:af4693bd3cb78b1bbaa8bcf8b93ff91ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae550eeec2a4933e0c9fc248155b5649c" id="r_ae550eeec2a4933e0c9fc248155b5649c"><td class="memItemLeft" align="right" valign="top"><a id="ae550eeec2a4933e0c9fc248155b5649c" name="ae550eeec2a4933e0c9fc248155b5649c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>error_output</b> (<a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:ae550eeec2a4933e0c9fc248155b5649c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ввывод ошибки <br /></td></tr>
+<tr class="separator:ae550eeec2a4933e0c9fc248155b5649c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc685a7b557f99af1bf6295ca8a44ef" id="r_a0dc685a7b557f99af1bf6295ca8a44ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a0dc685a7b557f99af1bf6295ca8a44ef">from_comma_to_dot</a> (char *str)</td></tr>
+<tr class="memdesc:a0dc685a7b557f99af1bf6295ca8a44ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Замена точек на запятые  <br /></td></tr>
+<tr class="separator:a0dc685a7b557f99af1bf6295ca8a44ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afab61b3534108d7ff9b51426dc23cb54" id="r_afab61b3534108d7ff9b51426dc23cb54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#afab61b3534108d7ff9b51426dc23cb54">symbol_not_arithmetic</a> (char str)</td></tr>
+<tr class="memdesc:afab61b3534108d7ff9b51426dc23cb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка на не арифметический символ  <br /></td></tr>
+<tr class="separator:afab61b3534108d7ff9b51426dc23cb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e22f6c19152aaf52bdb1af8f4314514" id="r_a0e22f6c19152aaf52bdb1af8f4314514"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a0e22f6c19152aaf52bdb1af8f4314514">symbol_arithmetic</a> (char str)</td></tr>
+<tr class="memdesc:a0e22f6c19152aaf52bdb1af8f4314514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка на арифметические операции  <br /></td></tr>
+<tr class="separator:a0e22f6c19152aaf52bdb1af8f4314514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31016865d547621a3dc6bdb5e907b4a1" id="r_a31016865d547621a3dc6bdb5e907b4a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a31016865d547621a3dc6bdb5e907b4a1">draw_grid_axes</a> (cairo_t *cr, int width, int height, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a31016865d547621a3dc6bdb5e907b4a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовка осей и сетки для графика функций  <br /></td></tr>
+<tr class="separator:a31016865d547621a3dc6bdb5e907b4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb214bee46b859beb788528b03f3a86c" id="r_afb214bee46b859beb788528b03f3a86c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#afb214bee46b859beb788528b03f3a86c">plot</a> (GtkDrawingArea *area, cairo_t *cr, int width, int height, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:afb214bee46b859beb788528b03f3a86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция отрисовки графика функций  <br /></td></tr>
+<tr class="separator:afb214bee46b859beb788528b03f3a86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac68fa352694f44951b0164985d450f3b" id="r_ac68fa352694f44951b0164985d450f3b"><td class="memItemLeft" align="right" valign="top"><a id="ac68fa352694f44951b0164985d450f3b" name="ac68fa352694f44951b0164985d450f3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>plot_button</b> (GtkButton *button, GtkDrawingArea *area, gpointer data)</td></tr>
+<tr class="separator:ac68fa352694f44951b0164985d450f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a85fa3215c296874ea9992c7bcd613" id="r_a93a85fa3215c296874ea9992c7bcd613"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a93a85fa3215c296874ea9992c7bcd613">draw_cb</a> (GtkDrawingArea *area, cairo_t *cr, int width, int height, gpointer data)</td></tr>
+<tr class="memdesc:a93a85fa3215c296874ea9992c7bcd613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Главная отрисовочная функция  <br /></td></tr>
+<tr class="separator:a93a85fa3215c296874ea9992c7bcd613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f08e2d729f5f81f7bb2a655f1506e3" id="r_a40f08e2d729f5f81f7bb2a655f1506e3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a40f08e2d729f5f81f7bb2a655f1506e3">new_x</a> (double x, double range, double sum, double width)</td></tr>
+<tr class="memdesc:a40f08e2d729f5f81f7bb2a655f1506e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование координаты оси X в координаты окна  <br /></td></tr>
+<tr class="separator:a40f08e2d729f5f81f7bb2a655f1506e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2694abb5f146756f27ae69465cfdd6fd" id="r_a2694abb5f146756f27ae69465cfdd6fd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a2694abb5f146756f27ae69465cfdd6fd">new_y</a> (double y, double range, double sum, double height)</td></tr>
+<tr class="memdesc:a2694abb5f146756f27ae69465cfdd6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование координаты оси Y в координаты окна  <br /></td></tr>
+<tr class="separator:a2694abb5f146756f27ae69465cfdd6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d2df72d931acfa329ac47c9e2ed8375" id="r_a6d2df72d931acfa329ac47c9e2ed8375"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a6d2df72d931acfa329ac47c9e2ed8375">from_postfix_to_result</a> (<a class="el" href="struct_queue.html">Queue</a> *queue, double x, double *result)</td></tr>
+<tr class="memdesc:a6d2df72d931acfa329ac47c9e2ed8375"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация вычисления выражения в постфиксной нотации  <br /></td></tr>
+<tr class="separator:a6d2df72d931acfa329ac47c9e2ed8375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ff7d1100fe7caeb83750fd3f2e2c05" id="r_ae2ff7d1100fe7caeb83750fd3f2e2c05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#ae2ff7d1100fe7caeb83750fd3f2e2c05">create_credit_calc</a> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:ae2ff7d1100fe7caeb83750fd3f2e2c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание графической части кредитного калькулятора  <br /></td></tr>
+<tr class="separator:ae2ff7d1100fe7caeb83750fd3f2e2c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1373ea1667abeab0fee006ce19eb9d09" id="r_a1373ea1667abeab0fee006ce19eb9d09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a1373ea1667abeab0fee006ce19eb9d09">calculus_credit_payments</a> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a1373ea1667abeab0fee006ce19eb9d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регулирование элементов кредитного калькулятора  <br /></td></tr>
+<tr class="separator:a1373ea1667abeab0fee006ce19eb9d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab77ddd2f14c776cb401ca68485f9eb" id="r_a5ab77ddd2f14c776cb401ca68485f9eb"><td class="memItemLeft" align="right" valign="top"><a id="a5ab77ddd2f14c776cb401ca68485f9eb" name="a5ab77ddd2f14c776cb401ca68485f9eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate_annuity</b> (<a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a5ab77ddd2f14c776cb401ca68485f9eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление платежей и процентов по кредиту <br /></td></tr>
+<tr class="separator:a5ab77ddd2f14c776cb401ca68485f9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff148e35bae1220407dc9bd0dc3e3e3" id="r_adff148e35bae1220407dc9bd0dc3e3e3"><td class="memItemLeft" align="right" valign="top"><a id="adff148e35bae1220407dc9bd0dc3e3e3" name="adff148e35bae1220407dc9bd0dc3e3e3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate_differentiated</b> (<a class="el" href="structcalculator.html">calculator</a> *calc, char **out_pay)</td></tr>
+<tr class="memdesc:adff148e35bae1220407dc9bd0dc3e3e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление платежей и процентов по кредиту <br /></td></tr>
+<tr class="separator:adff148e35bae1220407dc9bd0dc3e3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f071ea92c6f6f6fc8a580daa991ec4e" id="r_a9f071ea92c6f6f6fc8a580daa991ec4e"><td class="memItemLeft" align="right" valign="top"><a id="a9f071ea92c6f6f6fc8a580daa991ec4e" name="a9f071ea92c6f6f6fc8a580daa991ec4e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>create_deposit_calc</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a9f071ea92c6f6f6fc8a580daa991ec4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание графической части депозитного калькулятора <br /></td></tr>
+<tr class="separator:a9f071ea92c6f6f6fc8a580daa991ec4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584f480d1eab919220dd373e95b076ec" id="r_a584f480d1eab919220dd373e95b076ec"><td class="memItemLeft" align="right" valign="top"><a id="a584f480d1eab919220dd373e95b076ec" name="a584f480d1eab919220dd373e95b076ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>show_list_repl</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a584f480d1eab919220dd373e95b076ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод списка пополнений в отдельном окне <br /></td></tr>
+<tr class="separator:a584f480d1eab919220dd373e95b076ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85a8b2456a48bc57aeff03906cd4334" id="r_ac85a8b2456a48bc57aeff03906cd4334"><td class="memItemLeft" align="right" valign="top"><a id="ac85a8b2456a48bc57aeff03906cd4334" name="ac85a8b2456a48bc57aeff03906cd4334"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>show_list_rate</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:ac85a8b2456a48bc57aeff03906cd4334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод списка ставок в отдельном окне <br /></td></tr>
+<tr class="separator:ac85a8b2456a48bc57aeff03906cd4334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808bced9ce124d676f7d2f0f2284ccfb" id="r_a808bced9ce124d676f7d2f0f2284ccfb"><td class="memItemLeft" align="right" valign="top"><a id="a808bced9ce124d676f7d2f0f2284ccfb" name="a808bced9ce124d676f7d2f0f2284ccfb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>teardown_cb</b> (GtkSignalListItemFactory *self, GtkListItem *listitem, gpointer user_data)</td></tr>
+<tr class="separator:a808bced9ce124d676f7d2f0f2284ccfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c42d68276f9b4e8285c76b5b5df8e1" id="r_ad0c42d68276f9b4e8285c76b5b5df8e1"><td class="memItemLeft" align="right" valign="top"><a id="ad0c42d68276f9b4e8285c76b5b5df8e1" name="ad0c42d68276f9b4e8285c76b5b5df8e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>unbind_cb</b> (GtkSignalListItemFactory *self, GtkListItem *listitem, gpointer user_data)</td></tr>
+<tr class="separator:ad0c42d68276f9b4e8285c76b5b5df8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4390d579c2cc9a4b4b0f9ec98b497b" id="r_abe4390d579c2cc9a4b4b0f9ec98b497b"><td class="memItemLeft" align="right" valign="top"><a id="abe4390d579c2cc9a4b4b0f9ec98b497b" name="abe4390d579c2cc9a4b4b0f9ec98b497b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>bind_cb</b> (GtkSignalListItemFactory *self, GtkListItem *listitem, gpointer user_data)</td></tr>
+<tr class="separator:abe4390d579c2cc9a4b4b0f9ec98b497b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a749453f8425cc61663ff2c0b28c611d4" id="r_a749453f8425cc61663ff2c0b28c611d4"><td class="memItemLeft" align="right" valign="top"><a id="a749453f8425cc61663ff2c0b28c611d4" name="a749453f8425cc61663ff2c0b28c611d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setup_cb</b> (GtkSignalListItemFactory *self, GtkListItem *listitem, gpointer user_data)</td></tr>
+<tr class="separator:a749453f8425cc61663ff2c0b28c611d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d94cae2eb5d33b52dfd4d50a82c9c3d" id="r_a4d94cae2eb5d33b52dfd4d50a82c9c3d"><td class="memItemLeft" align="right" valign="top"><a id="a4d94cae2eb5d33b52dfd4d50a82c9c3d" name="a4d94cae2eb5d33b52dfd4d50a82c9c3d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>toggled_periodicity_deposit</b> (GtkWidget *check_button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a4d94cae2eb5d33b52dfd4d50a82c9c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Смена названия виджета периодичности от кнопки капитализации <br /></td></tr>
+<tr class="separator:a4d94cae2eb5d33b52dfd4d50a82c9c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c78692130f8a664c56fc353ef5df01" id="r_ad9c78692130f8a664c56fc353ef5df01"><td class="memItemLeft" align="right" valign="top"><a id="ad9c78692130f8a664c56fc353ef5df01" name="ad9c78692130f8a664c56fc353ef5df01"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>toggled_interest_deposit</b> (GtkWidget *check_button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:ad9c78692130f8a664c56fc353ef5df01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Смена отображения строчки ввода процента от кнопки типа ставки <br /></td></tr>
+<tr class="separator:ad9c78692130f8a664c56fc353ef5df01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677fb1931cb9a0da8125aa0cac80fb16" id="r_a677fb1931cb9a0da8125aa0cac80fb16"><td class="memItemLeft" align="right" valign="top"><a id="a677fb1931cb9a0da8125aa0cac80fb16" name="a677fb1931cb9a0da8125aa0cac80fb16"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>toggled_taxes_deposit</b> (GtkWidget *check_button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a677fb1931cb9a0da8125aa0cac80fb16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отображение поля ввода процента при нажатии на кнопку налога <br /></td></tr>
+<tr class="separator:a677fb1931cb9a0da8125aa0cac80fb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959db3fcb1dac3af8b8a8c2edae27c11" id="r_a959db3fcb1dac3af8b8a8c2edae27c11"><td class="memItemLeft" align="right" valign="top"><a id="a959db3fcb1dac3af8b8a8c2edae27c11" name="a959db3fcb1dac3af8b8a8c2edae27c11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_rate_button</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a959db3fcb1dac3af8b8a8c2edae27c11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавления процентной ставки и условий ее активации <br /></td></tr>
+<tr class="separator:a959db3fcb1dac3af8b8a8c2edae27c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab339913e1abc7f2c49f8458967e326f" id="r_aab339913e1abc7f2c49f8458967e326f"><td class="memItemLeft" align="right" valign="top"><a id="aab339913e1abc7f2c49f8458967e326f" name="aab339913e1abc7f2c49f8458967e326f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rem_rate_button</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:aab339913e1abc7f2c49f8458967e326f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаление последней добавленной процентной ставки <br /></td></tr>
+<tr class="separator:aab339913e1abc7f2c49f8458967e326f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4c06e2b04bd83adc7185a9b199b59b" id="r_a3e4c06e2b04bd83adc7185a9b199b59b"><td class="memItemLeft" align="right" valign="top"><a id="a3e4c06e2b04bd83adc7185a9b199b59b" name="a3e4c06e2b04bd83adc7185a9b199b59b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_repl_button</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a3e4c06e2b04bd83adc7185a9b199b59b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавления пополнения <br /></td></tr>
+<tr class="separator:a3e4c06e2b04bd83adc7185a9b199b59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2402f1c3206235bb1a61baef91c1b93f" id="r_a2402f1c3206235bb1a61baef91c1b93f"><td class="memItemLeft" align="right" valign="top"><a id="a2402f1c3206235bb1a61baef91c1b93f" name="a2402f1c3206235bb1a61baef91c1b93f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rem_repl_button</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a2402f1c3206235bb1a61baef91c1b93f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаление последнего добавленного пополнения <br /></td></tr>
+<tr class="separator:a2402f1c3206235bb1a61baef91c1b93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976929674eb5f5ad388c136fc1ddf2bf" id="r_a976929674eb5f5ad388c136fc1ddf2bf"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a976929674eb5f5ad388c136fc1ddf2bf">add_string</a> (char **array, const char *string)</td></tr>
+<tr class="memdesc:a976929674eb5f5ad388c136fc1ddf2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавление строки в матрицу char.  <br /></td></tr>
+<tr class="separator:a976929674eb5f5ad388c136fc1ddf2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafdb0880d103a9107459b09210e9829e" id="r_aafdb0880d103a9107459b09210e9829e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#aafdb0880d103a9107459b09210e9829e">calculus_deposit_payments</a> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:aafdb0880d103a9107459b09210e9829e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регулирование элементов депозитного калькулятора  <br /></td></tr>
+<tr class="separator:aafdb0880d103a9107459b09210e9829e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13847e13bf45090f1b6945517132d173" id="r_a13847e13bf45090f1b6945517132d173"><td class="memItemLeft" align="right" valign="top"><a id="a13847e13bf45090f1b6945517132d173" name="a13847e13bf45090f1b6945517132d173"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate_deposit</b> (<a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a13847e13bf45090f1b6945517132d173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление налога и процентов по депозиту <br /></td></tr>
+<tr class="separator:a13847e13bf45090f1b6945517132d173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b1fdc34c29bc50b397019f5e32f7af" id="r_a89b1fdc34c29bc50b397019f5e32f7af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a89b1fdc34c29bc50b397019f5e32f7af">is_leap_year</a> (int year)</td></tr>
+<tr class="memdesc:a89b1fdc34c29bc50b397019f5e32f7af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка, является ли год високосным  <br /></td></tr>
+<tr class="separator:a89b1fdc34c29bc50b397019f5e32f7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb28b8e22f5258f3089cc7707b27a308" id="r_acb28b8e22f5258f3089cc7707b27a308"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#acb28b8e22f5258f3089cc7707b27a308">split_date</a> (<a class="el" href="structcalculator.html">calculator</a> *calc, int *day, int *month, int *year)</td></tr>
+<tr class="memdesc:acb28b8e22f5258f3089cc7707b27a308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разбиение даты на месяц, день и год  <br /></td></tr>
+<tr class="separator:acb28b8e22f5258f3089cc7707b27a308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04e41a3f54cd466bb06f60ba9939a86" id="r_ab04e41a3f54cd466bb06f60ba9939a86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#ab04e41a3f54cd466bb06f60ba9939a86">get_total_days</a> (<a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:ab04e41a3f54cd466bb06f60ba9939a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сколько дней содержат один или несколько месяцев  <br /></td></tr>
+<tr class="separator:ab04e41a3f54cd466bb06f60ba9939a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adae97d36b8f15e8a0383f7702f2504e8" id="r_adae97d36b8f15e8a0383f7702f2504e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#adae97d36b8f15e8a0383f7702f2504e8">validity_date</a> (char *str)</td></tr>
+<tr class="memdesc:adae97d36b8f15e8a0383f7702f2504e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция валидации даты в строке  <br /></td></tr>
+<tr class="separator:adae97d36b8f15e8a0383f7702f2504e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b74ecdbf6d12657883f26d7252fd822" id="r_a8b74ecdbf6d12657883f26d7252fd822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a8b74ecdbf6d12657883f26d7252fd822">calc_periodity_types</a> (<a class="el" href="structcalculator.html">calculator</a> *calc, int *point, double num, int *date_point)</td></tr>
+<tr class="memdesc:a8b74ecdbf6d12657883f26d7252fd822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увелечение суммы или начисленных проценетов в зависимости от капитализации  <br /></td></tr>
+<tr class="separator:a8b74ecdbf6d12657883f26d7252fd822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1905b78bcb6f76b02b359d9558001d" id="r_afa1905b78bcb6f76b02b359d9558001d"><td class="memItemLeft" align="right" valign="top"><a id="afa1905b78bcb6f76b02b359d9558001d" name="afa1905b78bcb6f76b02b359d9558001d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>array_rate_is_empty</b> (<a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:afa1905b78bcb6f76b02b359d9558001d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка на пустоту матрицв ставок <br /></td></tr>
+<tr class="separator:afa1905b78bcb6f76b02b359d9558001d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1a90db6f8066fe8840b398a054afc2" id="r_abf1a90db6f8066fe8840b398a054afc2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#abf1a90db6f8066fe8840b398a054afc2">change_rate_on_amount</a> (<a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:abf1a90db6f8066fe8840b398a054afc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменение ставки от суммы  <br /></td></tr>
+<tr class="separator:abf1a90db6f8066fe8840b398a054afc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01dd69dc04f042aa1bf58b3cb5c1b755" id="r_a01dd69dc04f042aa1bf58b3cb5c1b755"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a01dd69dc04f042aa1bf58b3cb5c1b755">change_rate_on_term</a> (<a class="el" href="structcalculator.html">calculator</a> *calc, int point)</td></tr>
+<tr class="memdesc:a01dd69dc04f042aa1bf58b3cb5c1b755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменение ставки от периода  <br /></td></tr>
+<tr class="separator:a01dd69dc04f042aa1bf58b3cb5c1b755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9645f56f0ebd3e8691d25d7cf49a9503" id="r_a9645f56f0ebd3e8691d25d7cf49a9503"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a9645f56f0ebd3e8691d25d7cf49a9503">days_in_month</a> (int month, int year)</td></tr>
+<tr class="memdesc:a9645f56f0ebd3e8691d25d7cf49a9503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определние количества дней в месяце  <br /></td></tr>
+<tr class="separator:a9645f56f0ebd3e8691d25d7cf49a9503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49aa1b7e9b050752e5f5630475847322" id="r_a49aa1b7e9b050752e5f5630475847322"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a49aa1b7e9b050752e5f5630475847322">load_date_from_char</a> (char *str, int *month, int *day, int *year)</td></tr>
+<tr class="memdesc:a49aa1b7e9b050752e5f5630475847322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разбиение даты на месяц, день и год  <br /></td></tr>
+<tr class="separator:a49aa1b7e9b050752e5f5630475847322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3222d1b1a314d201d091eeed897e2c63" id="r_a3222d1b1a314d201d091eeed897e2c63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a3222d1b1a314d201d091eeed897e2c63">flow_of_time</a> (int *month, int *day, int *year)</td></tr>
+<tr class="memdesc:a3222d1b1a314d201d091eeed897e2c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменение даты в зависимости от дня, месяца и года  <br /></td></tr>
+<tr class="separator:a3222d1b1a314d201d091eeed897e2c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506a3c1f8bf08cb1172598e900b50688" id="r_a506a3c1f8bf08cb1172598e900b50688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a506a3c1f8bf08cb1172598e900b50688">increase_in_months</a> (int *month, int *year)</td></tr>
+<tr class="memdesc:a506a3c1f8bf08cb1172598e900b50688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменение года в зависимости от месяца  <br /></td></tr>
+<tr class="separator:a506a3c1f8bf08cb1172598e900b50688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e61113a3148de94b214de81be02487" id="r_ae9e61113a3148de94b214de81be02487"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#ae9e61113a3148de94b214de81be02487">count_days</a> (int month1, int day1, int year1, int month2, int day2, int year2)</td></tr>
+<tr class="memdesc:ae9e61113a3148de94b214de81be02487"><td class="mdescLeft">&#160;</td><td class="mdescRight">Считает количество дней между двумя датами  <br /></td></tr>
+<tr class="separator:ae9e61113a3148de94b214de81be02487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad019529247f2b402a0269fb69f5bcca2" id="r_ad019529247f2b402a0269fb69f5bcca2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#ad019529247f2b402a0269fb69f5bcca2">correctness_of_the_second_date</a> (<a class="el" href="structcalculator.html">calculator</a> *calc, int month2, int day2, int year2)</td></tr>
+<tr class="memdesc:ad019529247f2b402a0269fb69f5bcca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Больше ли вторая дата первой  <br /></td></tr>
+<tr class="separator:ad019529247f2b402a0269fb69f5bcca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5d85c3eb43aa1bc84b7c569009dcb9" id="r_acc5d85c3eb43aa1bc84b7c569009dcb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#acc5d85c3eb43aa1bc84b7c569009dcb9">processing_incorrect_replenishments</a> (<a class="el" href="structcalculator.html">calculator</a> *calc, double src[10][7], double **arr, int *n, int flag)</td></tr>
+<tr class="memdesc:acc5d85c3eb43aa1bc84b7c569009dcb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка некорректных пополнений  <br /></td></tr>
+<tr class="separator:acc5d85c3eb43aa1bc84b7c569009dcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6837880e615f59a6ffbece29ea8cb7f5" id="r_a6837880e615f59a6ffbece29ea8cb7f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a6837880e615f59a6ffbece29ea8cb7f5">replenishments_and_cuts</a> (<a class="el" href="structcalculator.html">calculator</a> *calc, double arr[10][7], int flag)</td></tr>
+<tr class="memdesc:a6837880e615f59a6ffbece29ea8cb7f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик пополнений и снятий  <br /></td></tr>
+<tr class="separator:a6837880e615f59a6ffbece29ea8cb7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07cbe159c8692fc188b53b7dc717dada" id="r_a07cbe159c8692fc188b53b7dc717dada"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a07cbe159c8692fc188b53b7dc717dada">collect_lost_additions</a> (<a class="el" href="structcalculator.html">calculator</a> *calc, double amount)</td></tr>
+<tr class="memdesc:a07cbe159c8692fc188b53b7dc717dada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сбор потерянных пополнений/снятий  <br /></td></tr>
+<tr class="separator:a07cbe159c8692fc188b53b7dc717dada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa23607433ae61a9642ea6f6acd88298" id="r_aaa23607433ae61a9642ea6f6acd88298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#aaa23607433ae61a9642ea6f6acd88298">calc_replenishments</a> (<a class="el" href="structcalculator.html">calculator</a> *calc, double arr[10][7], int i, int flag)</td></tr>
+<tr class="memdesc:aaa23607433ae61a9642ea6f6acd88298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расчет пополнений/снятий  <br /></td></tr>
+<tr class="separator:aaa23607433ae61a9642ea6f6acd88298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f5db2fdac2b53c26dff97baf8fa8f8" id="r_ad9f5db2fdac2b53c26dff97baf8fa8f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#ad9f5db2fdac2b53c26dff97baf8fa8f8">push_repl_to_arr</a> (double src[10][7], double **arr, int *n, int i, int flag)</td></tr>
+<tr class="memdesc:ad9f5db2fdac2b53c26dff97baf8fa8f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись в массив некорректных пополнений  <br /></td></tr>
+<tr class="separator:ad9f5db2fdac2b53c26dff97baf8fa8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c9e18de65b042e38cf7b1b3ed117cc3" id="r_a4c9e18de65b042e38cf7b1b3ed117cc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a4c9e18de65b042e38cf7b1b3ed117cc3">reduction_initial_state</a> (<a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a4c9e18de65b042e38cf7b1b3ed117cc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обнуление полей структуры используемых в вычеслениях депозитов  <br /></td></tr>
+<tr class="separator:a4c9e18de65b042e38cf7b1b3ed117cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298b387e3b5297cb98e88dbaf57ef5ae" id="r_a298b387e3b5297cb98e88dbaf57ef5ae"><td class="memItemLeft" align="right" valign="top"><a id="a298b387e3b5297cb98e88dbaf57ef5ae" name="a298b387e3b5297cb98e88dbaf57ef5ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>show_list_cuts</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a298b387e3b5297cb98e88dbaf57ef5ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод списка снятий в отдельном окне <br /></td></tr>
+<tr class="separator:a298b387e3b5297cb98e88dbaf57ef5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e8a0e021c7bd9185162d73efe384909" id="r_a6e8a0e021c7bd9185162d73efe384909"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#a6e8a0e021c7bd9185162d73efe384909">determine_refill_point</a> (int month, int year, int type)</td></tr>
+<tr class="memdesc:a6e8a0e021c7bd9185162d73efe384909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определение колтичества дней до пополнения для пополнений и снятий  <br /></td></tr>
+<tr class="separator:a6e8a0e021c7bd9185162d73efe384909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c5551c36deab3ae65687007a77b545" id="r_a55c5551c36deab3ae65687007a77b545"><td class="memItemLeft" align="right" valign="top"><a id="a55c5551c36deab3ae65687007a77b545" name="a55c5551c36deab3ae65687007a77b545"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rem_cut_button</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a55c5551c36deab3ae65687007a77b545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаление последнего добавленного снятия <br /></td></tr>
+<tr class="separator:a55c5551c36deab3ae65687007a77b545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61298a2d19f5b6de005e592d9b287acb" id="r_a61298a2d19f5b6de005e592d9b287acb"><td class="memItemLeft" align="right" valign="top"><a id="a61298a2d19f5b6de005e592d9b287acb" name="a61298a2d19f5b6de005e592d9b287acb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_cut_button</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a61298a2d19f5b6de005e592d9b287acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавления снятий <br /></td></tr>
+<tr class="separator:a61298a2d19f5b6de005e592d9b287acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af994d0aaaa0fc03d1ded2194cf9ebfa1" id="r_af994d0aaaa0fc03d1ded2194cf9ebfa1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__smart__calc_8h.html#af994d0aaaa0fc03d1ded2194cf9ebfa1">determine_refill_date</a> (int month, int year, int type)</td></tr>
+<tr class="memdesc:af994d0aaaa0fc03d1ded2194cf9ebfa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определение колтичества дней пополнения  <br /></td></tr>
+<tr class="separator:af994d0aaaa0fc03d1ded2194cf9ebfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Заголовочный файл с описанием структур, перечислений и прототопипов. </p>
+<p>Данный файл содержит в себе прототипы функций, определения структур обычного калькулятороа, кредитного и депозитного. А также перечислений для депозитного калькулятора. </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a976929674eb5f5ad388c136fc1ddf2bf" name="a976929674eb5f5ad388c136fc1ddf2bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a976929674eb5f5ad388c136fc1ddf2bf">&#9670;&#160;</a></span>add_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char ** add_string </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>string</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавление строки в матрицу char. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>массив строк </td></tr>
+    <tr><td class="paramname">string</td><td>строка, которую нужно добавить </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac792767295f3079358196fc15d70940c" name="ac792767295f3079358196fc15d70940c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac792767295f3079358196fc15d70940c">&#9670;&#160;</a></span>add_to_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_to_buffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>dont_check</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавление к математическому выражению </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+    <tr><td class="paramname">text</td><td>Вводимые данные </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9bb3c59fa8ed77fd91310c0ad815f314" name="a9bb3c59fa8ed77fd91310c0ad815f314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bb3c59fa8ed77fd91310c0ad815f314">&#9670;&#160;</a></span>calc_func_double()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double calc_func_double </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>operation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Берет два число из массива и выполняет операцию </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>массив из двух чисел </td></tr>
+    <tr><td class="paramname">operation</td><td>операция </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат </dd></dl>
+
+</div>
+</div>
+<a id="a8b74ecdbf6d12657883f26d7252fd822" name="a8b74ecdbf6d12657883f26d7252fd822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b74ecdbf6d12657883f26d7252fd822">&#9670;&#160;</a></span>calc_periodity_types()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calc_periodity_types </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>date_point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Увелечение суммы или начисленных проценетов в зависимости от капитализации </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+    <tr><td class="paramname">point</td><td>Счетчик дней </td></tr>
+    <tr><td class="paramname">num</td><td>Сумма </td></tr>
+    <tr><td class="paramname">date_point</td><td>День пополнения </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa23607433ae61a9642ea6f6acd88298" name="aaa23607433ae61a9642ea6f6acd88298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa23607433ae61a9642ea6f6acd88298">&#9670;&#160;</a></span>calc_replenishments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calc_replenishments </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>arr</em>[10][7], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Расчет пополнений/снятий </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+    <tr><td class="paramname">arr</td><td>Матрица </td></tr>
+    <tr><td class="paramname">i</td><td>Индекс </td></tr>
+    <tr><td class="paramname">flag</td><td>Флаг пополнения/снятия </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a28881adb91e5d6e8f1f8270f33061ba7" name="a28881adb91e5d6e8f1f8270f33061ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28881adb91e5d6e8f1f8270f33061ba7">&#9670;&#160;</a></span>calc_two_double()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double calc_two_double </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>operation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Берет два числп из массива и выполняет операцию </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>массив из двух чисел </td></tr>
+    <tr><td class="paramname">operation</td><td>операция </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат </dd></dl>
+
+</div>
+</div>
+<a id="afca633f9ebb7d5fa353aa0a2ce318ee1" name="afca633f9ebb7d5fa353aa0a2ce318ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca633f9ebb7d5fa353aa0a2ce318ee1">&#9670;&#160;</a></span>calculate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calculate </td>
+          <td>(</td>
+          <td class="paramtype">GtkButton *&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Регулирование элементов обычного калькулятора </p>
+<p>Валидация поступающих данных и вывод результата </p>
+
+</div>
+</div>
+<a id="af451199e7f5ac033db33537882d6808d" name="af451199e7f5ac033db33537882d6808d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af451199e7f5ac033db33537882d6808d">&#9670;&#160;</a></span>calculator_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calculator_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализация структуры </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1373ea1667abeab0fee006ce19eb9d09" name="a1373ea1667abeab0fee006ce19eb9d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1373ea1667abeab0fee006ce19eb9d09">&#9670;&#160;</a></span>calculus_credit_payments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calculus_credit_payments </td>
+          <td>(</td>
+          <td class="paramtype">GtkButton *&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Регулирование элементов кредитного калькулятора </p>
+<p>Валидация данных и вывод результата </p>
+
+</div>
+</div>
+<a id="aafdb0880d103a9107459b09210e9829e" name="aafdb0880d103a9107459b09210e9829e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafdb0880d103a9107459b09210e9829e">&#9670;&#160;</a></span>calculus_deposit_payments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calculus_deposit_payments </td>
+          <td>(</td>
+          <td class="paramtype">GtkButton *&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Регулирование элементов депозитного калькулятора </p>
+<p>Валидация данных и вывод результата </p>
+
+</div>
+</div>
+<a id="abf1a90db6f8066fe8840b398a054afc2" name="abf1a90db6f8066fe8840b398a054afc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf1a90db6f8066fe8840b398a054afc2">&#9670;&#160;</a></span>change_rate_on_amount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int change_rate_on_amount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изменение ставки от суммы </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="a01dd69dc04f042aa1bf58b3cb5c1b755" name="a01dd69dc04f042aa1bf58b3cb5c1b755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01dd69dc04f042aa1bf58b3cb5c1b755">&#9670;&#160;</a></span>change_rate_on_term()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int change_rate_on_term </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изменение ставки от периода </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+    <tr><td class="paramname">point</td><td>день именения ставки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="a07cbe159c8692fc188b53b7dc717dada" name="a07cbe159c8692fc188b53b7dc717dada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07cbe159c8692fc188b53b7dc717dada">&#9670;&#160;</a></span>collect_lost_additions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void collect_lost_additions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>amount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сбор потерянных пополнений/снятий </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+    <tr><td class="paramname">amount</td><td>Сумма </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad019529247f2b402a0269fb69f5bcca2" name="ad019529247f2b402a0269fb69f5bcca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad019529247f2b402a0269fb69f5bcca2">&#9670;&#160;</a></span>correctness_of_the_second_date()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int correctness_of_the_second_date </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>month2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>day2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>year2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Больше ли вторая дата первой </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+    <tr><td class="paramname">month2</td><td>Месяц </td></tr>
+    <tr><td class="paramname">day2</td><td>День </td></tr>
+    <tr><td class="paramname">year2</td><td>Год </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код проверки </dd></dl>
+
+</div>
+</div>
+<a id="ae9e61113a3148de94b214de81be02487" name="ae9e61113a3148de94b214de81be02487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9e61113a3148de94b214de81be02487">&#9670;&#160;</a></span>count_days()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int count_days </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>month1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>day1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>year1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>month2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>day2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>year2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Считает количество дней между двумя датами </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">month1</td><td>Месяц </td></tr>
+    <tr><td class="paramname">day1</td><td>День </td></tr>
+    <tr><td class="paramname">year1</td><td>Год </td></tr>
+    <tr><td class="paramname">month2</td><td>Месяц </td></tr>
+    <tr><td class="paramname">day2</td><td>День </td></tr>
+    <tr><td class="paramname">year2</td><td>Год </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество дней </dd></dl>
+
+</div>
+</div>
+<a id="ae2ff7d1100fe7caeb83750fd3f2e2c05" name="ae2ff7d1100fe7caeb83750fd3f2e2c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ff7d1100fe7caeb83750fd3f2e2c05">&#9670;&#160;</a></span>create_credit_calc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void create_credit_calc </td>
+          <td>(</td>
+          <td class="paramtype">GtkButton *&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создание графической части кредитного калькулятора </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">button</td><td>Кнопка вызывающая функцию </td></tr>
+    <tr><td class="paramname">calc</td><td>Структура с элементами кредитного калькулятора </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9645f56f0ebd3e8691d25d7cf49a9503" name="a9645f56f0ebd3e8691d25d7cf49a9503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9645f56f0ebd3e8691d25d7cf49a9503">&#9670;&#160;</a></span>days_in_month()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int days_in_month </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>month</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>year</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определние количества дней в месяце </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">month</td><td>Месяц </td></tr>
+    <tr><td class="paramname">year</td><td>Год </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество дней </dd></dl>
+
+</div>
+</div>
+<a id="af994d0aaaa0fc03d1ded2194cf9ebfa1" name="af994d0aaaa0fc03d1ded2194cf9ebfa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af994d0aaaa0fc03d1ded2194cf9ebfa1">&#9670;&#160;</a></span>determine_refill_date()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int determine_refill_date </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>month</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>year</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определение колтичества дней пополнения </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">month</td><td>Месяц </td></tr>
+    <tr><td class="paramname">year</td><td>Год </td></tr>
+    <tr><td class="paramname">type</td><td>Тип </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество дней </dd></dl>
+
+</div>
+</div>
+<a id="a6e8a0e021c7bd9185162d73efe384909" name="a6e8a0e021c7bd9185162d73efe384909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e8a0e021c7bd9185162d73efe384909">&#9670;&#160;</a></span>determine_refill_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int determine_refill_point </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>month</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>year</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определение колтичества дней до пополнения для пополнений и снятий </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">month</td><td>Месяц </td></tr>
+    <tr><td class="paramname">year</td><td>Год </td></tr>
+    <tr><td class="paramname">type</td><td>Тип пополнения/снятия </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество дней </dd></dl>
+
+</div>
+</div>
+<a id="a93a85fa3215c296874ea9992c7bcd613" name="a93a85fa3215c296874ea9992c7bcd613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93a85fa3215c296874ea9992c7bcd613">&#9670;&#160;</a></span>draw_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void draw_cb </td>
+          <td>(</td>
+          <td class="paramtype">GtkDrawingArea *&#160;</td>
+          <td class="paramname"><em>area</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cairo_t *&#160;</td>
+          <td class="paramname"><em>cr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gpointer&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Главная отрисовочная функция </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">area</td><td>область рисования </td></tr>
+    <tr><td class="paramname">cr</td><td>тип контекста рисования библиотеки cairo </td></tr>
+    <tr><td class="paramname">width</td><td>ширина окна </td></tr>
+    <tr><td class="paramname">height</td><td>высота окна </td></tr>
+    <tr><td class="paramname">data</td><td>Структура с вводными данными </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a31016865d547621a3dc6bdb5e907b4a1" name="a31016865d547621a3dc6bdb5e907b4a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31016865d547621a3dc6bdb5e907b4a1">&#9670;&#160;</a></span>draw_grid_axes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void draw_grid_axes </td>
+          <td>(</td>
+          <td class="paramtype">cairo_t *&#160;</td>
+          <td class="paramname"><em>cr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отрисовка осей и сетки для графика функций </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cr</td><td>тип контекста рисования библиотеки cairo </td></tr>
+    <tr><td class="paramname">width</td><td>ширина окна </td></tr>
+    <tr><td class="paramname">height</td><td>высота окна </td></tr>
+    <tr><td class="paramname">calc</td><td>Структура с элементами графика </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a232c82625781cc18290b47f8045ae589" name="a232c82625781cc18290b47f8045ae589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a232c82625781cc18290b47f8045ae589">&#9670;&#160;</a></span>entering_numbers_and_operations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entering_numbers_and_operations </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>dont_check</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>last_char_input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ввод чисел и арифметических операций </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+    <tr><td class="paramname">text</td><td>Вводимые данные </td></tr>
+    <tr><td class="paramname">dont_check</td><td>Флаг проверки </td></tr>
+    <tr><td class="paramname">last_char_input</td><td>Последний символ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af4693bd3cb78b1bbaa8bcf8b93ff91ad" name="af4693bd3cb78b1bbaa8bcf8b93ff91ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4693bd3cb78b1bbaa8bcf8b93ff91ad">&#9670;&#160;</a></span>erase_expression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void erase_expression </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>write</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обнуление выражения </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+    <tr><td class="paramname">write</td><td>Флаг записи </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3222d1b1a314d201d091eeed897e2c63" name="a3222d1b1a314d201d091eeed897e2c63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3222d1b1a314d201d091eeed897e2c63">&#9670;&#160;</a></span>flow_of_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void flow_of_time </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>month</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>day</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>year</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изменение даты в зависимости от дня, месяца и года </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">month</td><td>Месяц </td></tr>
+    <tr><td class="paramname">day</td><td>День </td></tr>
+    <tr><td class="paramname">year</td><td>Год </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0dc685a7b557f99af1bf6295ca8a44ef" name="a0dc685a7b557f99af1bf6295ca8a44ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc685a7b557f99af1bf6295ca8a44ef">&#9670;&#160;</a></span>from_comma_to_dot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void from_comma_to_dot </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Замена точек на запятые </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Строка </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aacb003f4d26c70bd5c5a535ba5048b1f" name="aacb003f4d26c70bd5c5a535ba5048b1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb003f4d26c70bd5c5a535ba5048b1f">&#9670;&#160;</a></span>from_infix_to_postfix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int from_infix_to_postfix </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_queue.html">Queue</a> *&#160;</td>
+          <td class="paramname"><em>queue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перевод выражения из инфиксной нотации в постфиксную в очередь </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Математическое выражение в строке </td></tr>
+    <tr><td class="paramname">x</td><td>переменная X </td></tr>
+    <tr><td class="paramname">queue</td><td>Очередь для записи в нее </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Нельзя подавать непроинициализированную очередь </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="a3523526e17d6bce0b1e4a0075a7bc76a" name="a3523526e17d6bce0b1e4a0075a7bc76a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3523526e17d6bce0b1e4a0075a7bc76a">&#9670;&#160;</a></span>from_postfix_to_double()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int from_postfix_to_double </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_queue.html">Queue</a> *&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Реализация вычисления выражения в постфиксной нотации </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queue</td><td>очередь с выражением в постфиксной нотации </td></tr>
+    <tr><td class="paramname">x</td><td>переменная X </td></tr>
+    <tr><td class="paramname">result</td><td>переменная для записи результата </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="a6d2df72d931acfa329ac47c9e2ed8375" name="a6d2df72d931acfa329ac47c9e2ed8375"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d2df72d931acfa329ac47c9e2ed8375">&#9670;&#160;</a></span>from_postfix_to_result()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int from_postfix_to_result </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_queue.html">Queue</a> *&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Реализация вычисления выражения в постфиксной нотации </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queue</td><td>очередь с выражением в постфиксной нотации </td></tr>
+    <tr><td class="paramname">x</td><td>переменная X </td></tr>
+    <tr><td class="paramname">result</td><td>переменная для записи результата </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки</dd></dl>
+<p>Отличается от функции from_infix_to_double тем, что в данной функции переменная X является типом double, сделанной специально для отрисовки графика функции </p>
+
+</div>
+</div>
+<a id="af6ec43babdd971e28e6a7826f855ccf2" name="af6ec43babdd971e28e6a7826f855ccf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6ec43babdd971e28e6a7826f855ccf2">&#9670;&#160;</a></span>function_input()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void function_input </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>last_char_input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ввод функций </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+    <tr><td class="paramname">text</td><td>Вводимая функция </td></tr>
+    <tr><td class="paramname">last_char_input</td><td>Последний символ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab9628c015202acec78c3644ad5a524eb" name="ab9628c015202acec78c3644ad5a524eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9628c015202acec78c3644ad5a524eb">&#9670;&#160;</a></span>get_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_index </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>operation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Поиск индекса функции </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">operation</td><td>строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>индекс </dd></dl>
+
+</div>
+</div>
+<a id="a43376cd734ffb9bd493b105e6857316d" name="a43376cd734ffb9bd493b105e6857316d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43376cd734ffb9bd493b105e6857316d">&#9670;&#160;</a></span>get_instruction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_instruction </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>current</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение варианта действия со стеком и очередью </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">last</td><td>Последний элемент занесенный в стек </td></tr>
+    <tr><td class="paramname">current</td><td>Текущий элемент передающийся из строки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вариант действия </dd></dl>
+<p>&zwj;**/</p>
+
+</div>
+</div>
+<a id="ab04e41a3f54cd466bb06f60ba9939a86" name="ab04e41a3f54cd466bb06f60ba9939a86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04e41a3f54cd466bb06f60ba9939a86">&#9670;&#160;</a></span>get_total_days()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_total_days </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сколько дней содержат один или несколько месяцев </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество дней </dd></dl>
+
+</div>
+</div>
+<a id="a506a3c1f8bf08cb1172598e900b50688" name="a506a3c1f8bf08cb1172598e900b50688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a506a3c1f8bf08cb1172598e900b50688">&#9670;&#160;</a></span>increase_in_months()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void increase_in_months </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>month</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>year</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изменение года в зависимости от месяца </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">month</td><td>Месяц </td></tr>
+    <tr><td class="paramname">year</td><td>Год </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81c157389c78c1c4d4e1f71bb8a2b721" name="a81c157389c78c1c4d4e1f71bb8a2b721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81c157389c78c1c4d4e1f71bb8a2b721">&#9670;&#160;</a></span>init_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_matrix </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>columns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>array</em>[rows][columns]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализация статической матрицы </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rows</td><td>Количество строк </td></tr>
+    <tr><td class="paramname">columns</td><td>Количество столбцов </td></tr>
+    <tr><td class="paramname">array</td><td>Матрица </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af8e316a34d437a017c0d69d975c692dc" name="af8e316a34d437a017c0d69d975c692dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e316a34d437a017c0d69d975c692dc">&#9670;&#160;</a></span>input_X()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void input_X </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ввод значения X. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+    <tr><td class="paramname">text</td><td>Вводимые данные </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0521043df46dcd93955249434530093d" name="a0521043df46dcd93955249434530093d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0521043df46dcd93955249434530093d">&#9670;&#160;</a></span>is_arithmetic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_arithmetic </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>sym</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка на то , является ли символ арифметическим </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sym</td><td>Символ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>булево значение </dd></dl>
+
+</div>
+</div>
+<a id="a89b1fdc34c29bc50b397019f5e32f7af" name="a89b1fdc34c29bc50b397019f5e32f7af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b1fdc34c29bc50b397019f5e32f7af">&#9670;&#160;</a></span>is_leap_year()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_leap_year </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>year</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка, является ли год високосным </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">year</td><td>Год </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Булево значение </dd></dl>
+
+</div>
+</div>
+<a id="a49aa1b7e9b050752e5f5630475847322" name="a49aa1b7e9b050752e5f5630475847322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49aa1b7e9b050752e5f5630475847322">&#9670;&#160;</a></span>load_date_from_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void load_date_from_char </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>month</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>day</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>year</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Разбиение даты на месяц, день и год </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>Строка с датой </td></tr>
+    <tr><td class="paramname">month</td><td>Месяц </td></tr>
+    <tr><td class="paramname">day</td><td>День </td></tr>
+    <tr><td class="paramname">year</td><td>Год </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a40f08e2d729f5f81f7bb2a655f1506e3" name="a40f08e2d729f5f81f7bb2a655f1506e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40f08e2d729f5f81f7bb2a655f1506e3">&#9670;&#160;</a></span>new_x()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double new_x </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>width</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразование координаты оси X в координаты окна </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>координата x </td></tr>
+    <tr><td class="paramname">range</td><td>диапазон минимального и максимального значения </td></tr>
+    <tr><td class="paramname">sum</td><td>сумма значений </td></tr>
+    <tr><td class="paramname">width</td><td>ширина окна </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2694abb5f146756f27ae69465cfdd6fd" name="a2694abb5f146756f27ae69465cfdd6fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2694abb5f146756f27ae69465cfdd6fd">&#9670;&#160;</a></span>new_y()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double new_y </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразование координаты оси Y в координаты окна </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>координата y </td></tr>
+    <tr><td class="paramname">range</td><td>диапазон минимального и максимального значения </td></tr>
+    <tr><td class="paramname">sum</td><td>сумма значений </td></tr>
+    <tr><td class="paramname">height</td><td>высота окна </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb214bee46b859beb788528b03f3a86c" name="afb214bee46b859beb788528b03f3a86c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb214bee46b859beb788528b03f3a86c">&#9670;&#160;</a></span>plot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void plot </td>
+          <td>(</td>
+          <td class="paramtype">GtkDrawingArea *&#160;</td>
+          <td class="paramname"><em>area</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cairo_t *&#160;</td>
+          <td class="paramname"><em>cr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция отрисовки графика функций </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">area</td><td>область рисования </td></tr>
+    <tr><td class="paramname">cr</td><td>тип контекста рисования библиотеки cairo </td></tr>
+    <tr><td class="paramname">width</td><td>ширина окна </td></tr>
+    <tr><td class="paramname">height</td><td>высота окна </td></tr>
+    <tr><td class="paramname">calc</td><td>Структура с вводными данными </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acc5d85c3eb43aa1bc84b7c569009dcb9" name="acc5d85c3eb43aa1bc84b7c569009dcb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc5d85c3eb43aa1bc84b7c569009dcb9">&#9670;&#160;</a></span>processing_incorrect_replenishments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void processing_incorrect_replenishments </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>src</em>[10][7], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double **&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка некорректных пополнений </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+    <tr><td class="paramname">src</td><td>Матрица </td></tr>
+    <tr><td class="paramname">arr</td><td>Массив некорректных пополнений </td></tr>
+    <tr><td class="paramname">n</td><td>Счетчик массива некорректных пополнений </td></tr>
+    <tr><td class="paramname">flag</td><td>Флаг пополнения/снятия </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad9f5db2fdac2b53c26dff97baf8fa8f8" name="ad9f5db2fdac2b53c26dff97baf8fa8f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9f5db2fdac2b53c26dff97baf8fa8f8">&#9670;&#160;</a></span>push_repl_to_arr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void push_repl_to_arr </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>src</em>[10][7], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double **&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запись в массив некорректных пополнений </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>Структура </td></tr>
+    <tr><td class="paramname">arr</td><td>Массив </td></tr>
+    <tr><td class="paramname">n</td><td>Счетчик </td></tr>
+    <tr><td class="paramname">i</td><td>Счетчик </td></tr>
+    <tr><td class="paramname">flag</td><td>Флаг пополнения/снятия </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4c9e18de65b042e38cf7b1b3ed117cc3" name="a4c9e18de65b042e38cf7b1b3ed117cc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c9e18de65b042e38cf7b1b3ed117cc3">&#9670;&#160;</a></span>reduction_initial_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reduction_initial_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обнуление полей структуры используемых в вычеслениях депозитов </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6837880e615f59a6ffbece29ea8cb7f5" name="a6837880e615f59a6ffbece29ea8cb7f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6837880e615f59a6ffbece29ea8cb7f5">&#9670;&#160;</a></span>replenishments_and_cuts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void replenishments_and_cuts </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>arr</em>[10][7], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обработчик пополнений и снятий </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+    <tr><td class="paramname">arr</td><td>Матрица </td></tr>
+    <tr><td class="paramname">flag</td><td>Флаг пополнения/снятия </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0d3328216dba360afb3419de346b7303" name="a0d3328216dba360afb3419de346b7303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d3328216dba360afb3419de346b7303">&#9670;&#160;</a></span>solve_expression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void solve_expression </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Решение выражения </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+    <tr><td class="paramname">error</td><td>Флаг ошибки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acb28b8e22f5258f3089cc7707b27a308" name="acb28b8e22f5258f3089cc7707b27a308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb28b8e22f5258f3089cc7707b27a308">&#9670;&#160;</a></span>split_date()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void split_date </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcalculator.html">calculator</a> *&#160;</td>
+          <td class="paramname"><em>calc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>day</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>month</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>year</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Разбиение даты на месяц, день и год </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calc</td><td>Структура </td></tr>
+    <tr><td class="paramname">day</td><td>День </td></tr>
+    <tr><td class="paramname">month</td><td>Месяц </td></tr>
+    <tr><td class="paramname">year</td><td>Год </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0e22f6c19152aaf52bdb1af8f4314514" name="a0e22f6c19152aaf52bdb1af8f4314514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e22f6c19152aaf52bdb1af8f4314514">&#9670;&#160;</a></span>symbol_arithmetic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int symbol_arithmetic </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка на арифметические операции </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Символ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afab61b3534108d7ff9b51426dc23cb54" name="afab61b3534108d7ff9b51426dc23cb54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afab61b3534108d7ff9b51426dc23cb54">&#9670;&#160;</a></span>symbol_not_arithmetic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int symbol_not_arithmetic </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка на не арифметический символ </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Символ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abaa5b02b862962edefd134240f376712" name="abaa5b02b862962edefd134240f376712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa5b02b862962edefd134240f376712">&#9670;&#160;</a></span>validate_credit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validate_credit </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция валидации строки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки</dd></dl>
+<p>Проверяет на то, есть ли в строке что-то кроме цифр и точки. </p>
+
+</div>
+</div>
+<a id="a45331a5279514b1487b2c870a6ab2b88" name="a45331a5279514b1487b2c870a6ab2b88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45331a5279514b1487b2c870a6ab2b88">&#9670;&#160;</a></span>validate_rate_deposit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validate_rate_deposit </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция валидации строки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки</dd></dl>
+<p>Проверяет на то, есть ли в строке что-то кроме цифр, плюса, минуса или точки. </p>
+
+</div>
+</div>
+<a id="acfc1797daa04d0982f4270f3b082ff01" name="acfc1797daa04d0982f4270f3b082ff01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc1797daa04d0982f4270f3b082ff01">&#9670;&#160;</a></span>validity_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validity_check </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>have_x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка выражения на соотвествие инфиксной нотации </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Строка </td></tr>
+    <tr><td class="paramname">have_x</td><td>Флаг наличия x </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="ae6c6fb3da150f903898cfa32b4bcaad1" name="ae6c6fb3da150f903898cfa32b4bcaad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c6fb3da150f903898cfa32b4bcaad1">&#9670;&#160;</a></span>validity_check_dot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validity_check_dot </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция валидации строки, проверяющая есть ли что-то кроме цифр в строке </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="aef960b87b1a81be332a09a682d1625a9" name="aef960b87b1a81be332a09a682d1625a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef960b87b1a81be332a09a682d1625a9">&#9670;&#160;</a></span>validity_check_x()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validity_check_x </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка числа в строке на корректность </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="adae97d36b8f15e8a0383f7702f2504e8" name="adae97d36b8f15e8a0383f7702f2504e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adae97d36b8f15e8a0383f7702f2504e8">&#9670;&#160;</a></span>validity_date()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validity_date </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция валидации даты в строке </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

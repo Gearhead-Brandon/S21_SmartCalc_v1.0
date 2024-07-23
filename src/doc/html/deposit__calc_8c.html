@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Smart calculator: Файл frontend/deposit_calc.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Smart calculator
+   </div>
+   <div id="projectbrief">В этом проекте вы реализуете расширенную версию обычного калькулятора, который можно найти в стандартных приложениях каждой операционной системы на языке программирования C с использованием структурного программирования.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ca0386ec887ae6362f93b0d653b52e0c.html">frontend</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл deposit_calc.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Исходный файл с функциями создания графической части депозитного калькулятора  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="s21__smart__calc_8h_source.html">../s21_smart_calc.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a9f071ea92c6f6f6fc8a580daa991ec4e" id="r_a9f071ea92c6f6f6fc8a580daa991ec4e"><td class="memItemLeft" align="right" valign="top"><a id="a9f071ea92c6f6f6fc8a580daa991ec4e" name="a9f071ea92c6f6f6fc8a580daa991ec4e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>create_deposit_calc</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a9f071ea92c6f6f6fc8a580daa991ec4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание графической части депозитного калькулятора <br /></td></tr>
+<tr class="separator:a9f071ea92c6f6f6fc8a580daa991ec4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d94cae2eb5d33b52dfd4d50a82c9c3d" id="r_a4d94cae2eb5d33b52dfd4d50a82c9c3d"><td class="memItemLeft" align="right" valign="top"><a id="a4d94cae2eb5d33b52dfd4d50a82c9c3d" name="a4d94cae2eb5d33b52dfd4d50a82c9c3d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>toggled_periodicity_deposit</b> (GtkWidget *check_button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a4d94cae2eb5d33b52dfd4d50a82c9c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Смена названия виджета периодичности от кнопки капитализации <br /></td></tr>
+<tr class="separator:a4d94cae2eb5d33b52dfd4d50a82c9c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c78692130f8a664c56fc353ef5df01" id="r_ad9c78692130f8a664c56fc353ef5df01"><td class="memItemLeft" align="right" valign="top"><a id="ad9c78692130f8a664c56fc353ef5df01" name="ad9c78692130f8a664c56fc353ef5df01"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>toggled_interest_deposit</b> (GtkWidget *check_button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:ad9c78692130f8a664c56fc353ef5df01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Смена отображения строчки ввода процента от кнопки типа ставки <br /></td></tr>
+<tr class="separator:ad9c78692130f8a664c56fc353ef5df01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677fb1931cb9a0da8125aa0cac80fb16" id="r_a677fb1931cb9a0da8125aa0cac80fb16"><td class="memItemLeft" align="right" valign="top"><a id="a677fb1931cb9a0da8125aa0cac80fb16" name="a677fb1931cb9a0da8125aa0cac80fb16"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>toggled_taxes_deposit</b> (GtkWidget *check_button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a677fb1931cb9a0da8125aa0cac80fb16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отображение поля ввода процента при нажатии на кнопку налога <br /></td></tr>
+<tr class="separator:a677fb1931cb9a0da8125aa0cac80fb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959db3fcb1dac3af8b8a8c2edae27c11" id="r_a959db3fcb1dac3af8b8a8c2edae27c11"><td class="memItemLeft" align="right" valign="top"><a id="a959db3fcb1dac3af8b8a8c2edae27c11" name="a959db3fcb1dac3af8b8a8c2edae27c11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_rate_button</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a959db3fcb1dac3af8b8a8c2edae27c11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавления процентной ставки и условий ее активации <br /></td></tr>
+<tr class="separator:a959db3fcb1dac3af8b8a8c2edae27c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab339913e1abc7f2c49f8458967e326f" id="r_aab339913e1abc7f2c49f8458967e326f"><td class="memItemLeft" align="right" valign="top"><a id="aab339913e1abc7f2c49f8458967e326f" name="aab339913e1abc7f2c49f8458967e326f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rem_rate_button</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:aab339913e1abc7f2c49f8458967e326f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаление последней добавленной процентной ставки <br /></td></tr>
+<tr class="separator:aab339913e1abc7f2c49f8458967e326f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee3a19f212117f671cff4d804569c41" id="r_aeee3a19f212117f671cff4d804569c41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="deposit__calc_8c.html#aeee3a19f212117f671cff4d804569c41">load_date_from_char</a> (char *src, int *month, int *day, int *year)</td></tr>
+<tr class="memdesc:aeee3a19f212117f671cff4d804569c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разбиение даты на месяц, день и год  <br /></td></tr>
+<tr class="separator:aeee3a19f212117f671cff4d804569c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4c06e2b04bd83adc7185a9b199b59b" id="r_a3e4c06e2b04bd83adc7185a9b199b59b"><td class="memItemLeft" align="right" valign="top"><a id="a3e4c06e2b04bd83adc7185a9b199b59b" name="a3e4c06e2b04bd83adc7185a9b199b59b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_repl_button</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a3e4c06e2b04bd83adc7185a9b199b59b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавления пополнения <br /></td></tr>
+<tr class="separator:a3e4c06e2b04bd83adc7185a9b199b59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2402f1c3206235bb1a61baef91c1b93f" id="r_a2402f1c3206235bb1a61baef91c1b93f"><td class="memItemLeft" align="right" valign="top"><a id="a2402f1c3206235bb1a61baef91c1b93f" name="a2402f1c3206235bb1a61baef91c1b93f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rem_repl_button</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a2402f1c3206235bb1a61baef91c1b93f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаление последнего добавленного пополнения <br /></td></tr>
+<tr class="separator:a2402f1c3206235bb1a61baef91c1b93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61298a2d19f5b6de005e592d9b287acb" id="r_a61298a2d19f5b6de005e592d9b287acb"><td class="memItemLeft" align="right" valign="top"><a id="a61298a2d19f5b6de005e592d9b287acb" name="a61298a2d19f5b6de005e592d9b287acb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_cut_button</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a61298a2d19f5b6de005e592d9b287acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавления снятий <br /></td></tr>
+<tr class="separator:a61298a2d19f5b6de005e592d9b287acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c5551c36deab3ae65687007a77b545" id="r_a55c5551c36deab3ae65687007a77b545"><td class="memItemLeft" align="right" valign="top"><a id="a55c5551c36deab3ae65687007a77b545" name="a55c5551c36deab3ae65687007a77b545"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rem_cut_button</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a55c5551c36deab3ae65687007a77b545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаление последнего добавленного снятия <br /></td></tr>
+<tr class="separator:a55c5551c36deab3ae65687007a77b545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f0f7e613f83dc1a31ba92afe43ffe33" id="r_a7f0f7e613f83dc1a31ba92afe43ffe33"><td class="memItemLeft" align="right" valign="top"><a id="a7f0f7e613f83dc1a31ba92afe43ffe33" name="a7f0f7e613f83dc1a31ba92afe43ffe33"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setup_cb</b> (G_GNUC_UNUSED GtkSignalListItemFactory *self, GtkListItem *listitem, G_GNUC_UNUSED gpointer user_data)</td></tr>
+<tr class="separator:a7f0f7e613f83dc1a31ba92afe43ffe33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91457d35bbae52d67b8bc2331d805a93" id="r_a91457d35bbae52d67b8bc2331d805a93"><td class="memItemLeft" align="right" valign="top"><a id="a91457d35bbae52d67b8bc2331d805a93" name="a91457d35bbae52d67b8bc2331d805a93"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>bind_cb</b> (G_GNUC_UNUSED GtkSignalListItemFactory *self, GtkListItem *listitem, G_GNUC_UNUSED gpointer user_data)</td></tr>
+<tr class="separator:a91457d35bbae52d67b8bc2331d805a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe5376939940df2aeefd0a227377dd2f" id="r_abe5376939940df2aeefd0a227377dd2f"><td class="memItemLeft" align="right" valign="top"><a id="abe5376939940df2aeefd0a227377dd2f" name="abe5376939940df2aeefd0a227377dd2f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>unbind_cb</b> (G_GNUC_UNUSED GtkSignalListItemFactory *self, G_GNUC_UNUSED GtkListItem *listitem, G_GNUC_UNUSED gpointer user_data)</td></tr>
+<tr class="separator:abe5376939940df2aeefd0a227377dd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389a1c73b54dd66ec8227be7786cf041" id="r_a389a1c73b54dd66ec8227be7786cf041"><td class="memItemLeft" align="right" valign="top"><a id="a389a1c73b54dd66ec8227be7786cf041" name="a389a1c73b54dd66ec8227be7786cf041"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>teardown_cb</b> (G_GNUC_UNUSED GtkSignalListItemFactory *self, G_GNUC_UNUSED GtkListItem *listitem, G_GNUC_UNUSED gpointer user_data)</td></tr>
+<tr class="separator:a389a1c73b54dd66ec8227be7786cf041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976929674eb5f5ad388c136fc1ddf2bf" id="r_a976929674eb5f5ad388c136fc1ddf2bf"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="deposit__calc_8c.html#a976929674eb5f5ad388c136fc1ddf2bf">add_string</a> (char **array, const char *string)</td></tr>
+<tr class="memdesc:a976929674eb5f5ad388c136fc1ddf2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавление строки в матрицу char.  <br /></td></tr>
+<tr class="separator:a976929674eb5f5ad388c136fc1ddf2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85a8b2456a48bc57aeff03906cd4334" id="r_ac85a8b2456a48bc57aeff03906cd4334"><td class="memItemLeft" align="right" valign="top"><a id="ac85a8b2456a48bc57aeff03906cd4334" name="ac85a8b2456a48bc57aeff03906cd4334"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>show_list_rate</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:ac85a8b2456a48bc57aeff03906cd4334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод списка ставок в отдельном окне <br /></td></tr>
+<tr class="separator:ac85a8b2456a48bc57aeff03906cd4334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584f480d1eab919220dd373e95b076ec" id="r_a584f480d1eab919220dd373e95b076ec"><td class="memItemLeft" align="right" valign="top"><a id="a584f480d1eab919220dd373e95b076ec" name="a584f480d1eab919220dd373e95b076ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>show_list_repl</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a584f480d1eab919220dd373e95b076ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод списка пополнений в отдельном окне <br /></td></tr>
+<tr class="separator:a584f480d1eab919220dd373e95b076ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298b387e3b5297cb98e88dbaf57ef5ae" id="r_a298b387e3b5297cb98e88dbaf57ef5ae"><td class="memItemLeft" align="right" valign="top"><a id="a298b387e3b5297cb98e88dbaf57ef5ae" name="a298b387e3b5297cb98e88dbaf57ef5ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>show_list_cuts</b> (GtkButton *button, <a class="el" href="structcalculator.html">calculator</a> *calc)</td></tr>
+<tr class="memdesc:a298b387e3b5297cb98e88dbaf57ef5ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод списка снятий в отдельном окне <br /></td></tr>
+<tr class="separator:a298b387e3b5297cb98e88dbaf57ef5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Исходный файл с функциями создания графической части депозитного калькулятора </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a976929674eb5f5ad388c136fc1ddf2bf" name="a976929674eb5f5ad388c136fc1ddf2bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a976929674eb5f5ad388c136fc1ddf2bf">&#9670;&#160;</a></span>add_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char ** add_string </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>string</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавление строки в матрицу char. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>массив строк </td></tr>
+    <tr><td class="paramname">string</td><td>строка, которую нужно добавить </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeee3a19f212117f671cff4d804569c41" name="aeee3a19f212117f671cff4d804569c41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee3a19f212117f671cff4d804569c41">&#9670;&#160;</a></span>load_date_from_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void load_date_from_char </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>month</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>day</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>year</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Разбиение даты на месяц, день и год </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>Строка с датой </td></tr>
+    <tr><td class="paramname">month</td><td>Месяц </td></tr>
+    <tr><td class="paramname">day</td><td>День </td></tr>
+    <tr><td class="paramname">year</td><td>Год </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

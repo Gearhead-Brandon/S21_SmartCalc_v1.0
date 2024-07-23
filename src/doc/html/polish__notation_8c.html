@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Smart calculator: Файл backend/calculation_functions/polish_notation.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Smart calculator
+   </div>
+   <div id="projectbrief">В этом проекте вы реализуете расширенную версию обычного калькулятора, который можно найти в стандартных приложениях каждой операционной системы на языке программирования C с использованием структурного программирования.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_d6250baea4c2c58524832f93ca27c597.html">calculation_functions</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл polish_notation.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Исходный файл с функциями вычисления скобочных выражения  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="s21__smart__calc_8h_source.html">../../s21_smart_calc.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a43376cd734ffb9bd493b105e6857316d" id="r_a43376cd734ffb9bd493b105e6857316d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="polish__notation_8c.html#a43376cd734ffb9bd493b105e6857316d">get_instruction</a> (char *last, char *current)</td></tr>
+<tr class="memdesc:a43376cd734ffb9bd493b105e6857316d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение варианта действия со стеком и очередью  <br /></td></tr>
+<tr class="separator:a43376cd734ffb9bd493b105e6857316d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9628c015202acec78c3644ad5a524eb" id="r_ab9628c015202acec78c3644ad5a524eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="polish__notation_8c.html#ab9628c015202acec78c3644ad5a524eb">get_index</a> (char *operation)</td></tr>
+<tr class="memdesc:ab9628c015202acec78c3644ad5a524eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поиск индекса функции  <br /></td></tr>
+<tr class="separator:ab9628c015202acec78c3644ad5a524eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0521043df46dcd93955249434530093d" id="r_a0521043df46dcd93955249434530093d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="polish__notation_8c.html#a0521043df46dcd93955249434530093d">is_arithmetic</a> (char sym)</td></tr>
+<tr class="memdesc:a0521043df46dcd93955249434530093d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка на то , является ли символ арифметическим  <br /></td></tr>
+<tr class="separator:a0521043df46dcd93955249434530093d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc1797daa04d0982f4270f3b082ff01" id="r_acfc1797daa04d0982f4270f3b082ff01"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="polish__notation_8c.html#acfc1797daa04d0982f4270f3b082ff01">validity_check</a> (char *str, int *have_x)</td></tr>
+<tr class="memdesc:acfc1797daa04d0982f4270f3b082ff01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка выражения на соотвествие инфиксной нотации  <br /></td></tr>
+<tr class="separator:acfc1797daa04d0982f4270f3b082ff01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef960b87b1a81be332a09a682d1625a9" id="r_aef960b87b1a81be332a09a682d1625a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="polish__notation_8c.html#aef960b87b1a81be332a09a682d1625a9">validity_check_x</a> (char *str)</td></tr>
+<tr class="memdesc:aef960b87b1a81be332a09a682d1625a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка числа в строке на корректность  <br /></td></tr>
+<tr class="separator:aef960b87b1a81be332a09a682d1625a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb003f4d26c70bd5c5a535ba5048b1f" id="r_aacb003f4d26c70bd5c5a535ba5048b1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="polish__notation_8c.html#aacb003f4d26c70bd5c5a535ba5048b1f">from_infix_to_postfix</a> (char *str, char *x, <a class="el" href="struct_queue.html">Queue</a> *queue)</td></tr>
+<tr class="memdesc:aacb003f4d26c70bd5c5a535ba5048b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевод выражения из инфиксной нотации в постфиксную в очередь  <br /></td></tr>
+<tr class="separator:aacb003f4d26c70bd5c5a535ba5048b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3523526e17d6bce0b1e4a0075a7bc76a" id="r_a3523526e17d6bce0b1e4a0075a7bc76a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="polish__notation_8c.html#a3523526e17d6bce0b1e4a0075a7bc76a">from_postfix_to_double</a> (<a class="el" href="struct_queue.html">Queue</a> *queue, char *x, double *result)</td></tr>
+<tr class="memdesc:a3523526e17d6bce0b1e4a0075a7bc76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация вычисления выражения в постфиксной нотации  <br /></td></tr>
+<tr class="separator:a3523526e17d6bce0b1e4a0075a7bc76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28881adb91e5d6e8f1f8270f33061ba7" id="r_a28881adb91e5d6e8f1f8270f33061ba7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="polish__notation_8c.html#a28881adb91e5d6e8f1f8270f33061ba7">calc_two_double</a> (double *arr, char *operation)</td></tr>
+<tr class="memdesc:a28881adb91e5d6e8f1f8270f33061ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Берет два числп из массива и выполняет операцию  <br /></td></tr>
+<tr class="separator:a28881adb91e5d6e8f1f8270f33061ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb3c59fa8ed77fd91310c0ad815f314" id="r_a9bb3c59fa8ed77fd91310c0ad815f314"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="polish__notation_8c.html#a9bb3c59fa8ed77fd91310c0ad815f314">calc_func_double</a> (double *arr, char *operation)</td></tr>
+<tr class="memdesc:a9bb3c59fa8ed77fd91310c0ad815f314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Берет два число из массива и выполняет операцию  <br /></td></tr>
+<tr class="separator:a9bb3c59fa8ed77fd91310c0ad815f314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Исходный файл с функциями вычисления скобочных выражения </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a9bb3c59fa8ed77fd91310c0ad815f314" name="a9bb3c59fa8ed77fd91310c0ad815f314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bb3c59fa8ed77fd91310c0ad815f314">&#9670;&#160;</a></span>calc_func_double()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double calc_func_double </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>operation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Берет два число из массива и выполняет операцию </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>массив из двух чисел </td></tr>
+    <tr><td class="paramname">operation</td><td>операция </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат </dd></dl>
+
+</div>
+</div>
+<a id="a28881adb91e5d6e8f1f8270f33061ba7" name="a28881adb91e5d6e8f1f8270f33061ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28881adb91e5d6e8f1f8270f33061ba7">&#9670;&#160;</a></span>calc_two_double()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double calc_two_double </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>operation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Берет два числп из массива и выполняет операцию </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>массив из двух чисел </td></tr>
+    <tr><td class="paramname">operation</td><td>операция </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат </dd></dl>
+
+</div>
+</div>
+<a id="aacb003f4d26c70bd5c5a535ba5048b1f" name="aacb003f4d26c70bd5c5a535ba5048b1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb003f4d26c70bd5c5a535ba5048b1f">&#9670;&#160;</a></span>from_infix_to_postfix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int from_infix_to_postfix </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_queue.html">Queue</a> *&#160;</td>
+          <td class="paramname"><em>queue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перевод выражения из инфиксной нотации в постфиксную в очередь </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Математическое выражение в строке </td></tr>
+    <tr><td class="paramname">x</td><td>переменная X </td></tr>
+    <tr><td class="paramname">queue</td><td>Очередь для записи в нее </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Нельзя подавать непроинициализированную очередь </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="a3523526e17d6bce0b1e4a0075a7bc76a" name="a3523526e17d6bce0b1e4a0075a7bc76a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3523526e17d6bce0b1e4a0075a7bc76a">&#9670;&#160;</a></span>from_postfix_to_double()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int from_postfix_to_double </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_queue.html">Queue</a> *&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Реализация вычисления выражения в постфиксной нотации </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queue</td><td>очередь с выражением в постфиксной нотации </td></tr>
+    <tr><td class="paramname">x</td><td>переменная X </td></tr>
+    <tr><td class="paramname">result</td><td>переменная для записи результата </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="ab9628c015202acec78c3644ad5a524eb" name="ab9628c015202acec78c3644ad5a524eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9628c015202acec78c3644ad5a524eb">&#9670;&#160;</a></span>get_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_index </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>operation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Поиск индекса функции </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">operation</td><td>строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>индекс </dd></dl>
+
+</div>
+</div>
+<a id="a43376cd734ffb9bd493b105e6857316d" name="a43376cd734ffb9bd493b105e6857316d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43376cd734ffb9bd493b105e6857316d">&#9670;&#160;</a></span>get_instruction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_instruction </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>current</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение варианта действия со стеком и очередью </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">last</td><td>Последний элемент занесенный в стек </td></tr>
+    <tr><td class="paramname">current</td><td>Текущий элемент передающийся из строки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вариант действия </dd></dl>
+<p>&zwj;**/</p>
+
+</div>
+</div>
+<a id="a0521043df46dcd93955249434530093d" name="a0521043df46dcd93955249434530093d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0521043df46dcd93955249434530093d">&#9670;&#160;</a></span>is_arithmetic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_arithmetic </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>sym</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка на то , является ли символ арифметическим </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sym</td><td>Символ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>булево значение </dd></dl>
+
+</div>
+</div>
+<a id="acfc1797daa04d0982f4270f3b082ff01" name="acfc1797daa04d0982f4270f3b082ff01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc1797daa04d0982f4270f3b082ff01">&#9670;&#160;</a></span>validity_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validity_check </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>have_x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка выражения на соотвествие инфиксной нотации </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Строка </td></tr>
+    <tr><td class="paramname">have_x</td><td>Флаг наличия x </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="aef960b87b1a81be332a09a682d1625a9" name="aef960b87b1a81be332a09a682d1625a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef960b87b1a81be332a09a682d1625a9">&#9670;&#160;</a></span>validity_check_x()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validity_check_x </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка числа в строке на корректность </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

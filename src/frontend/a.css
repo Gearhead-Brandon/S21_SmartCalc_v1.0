@@ -1,0 +1,364 @@
+/* WINDOW */
+window{
+    background-color:#2c2e2d;
+    border-radius: 6px; 
+}
+
+.window_list{
+    font-size: 20px;
+    background-color: white;
+}
+/* WINDOW */
+
+.titlebar {
+    background: white;
+    color:#000000; 
+}
+
+.left_box{
+    margin-right: 13px;
+}
+
+/* GRID */
+.grid_regular_calc{
+    margin-left: 13px;
+}
+
+.grid_credit{
+    margin-left: 170px;
+    margin-top:  30px;
+}
+
+.grid_deposit{
+    margin-left: 100px;
+    margin-top:  15px;
+}
+/* GRID */
+
+/* MENUBAR */
+.menu_bar:hover{
+    background: #6495ED;
+    box-shadow: 8px 7px 5px 2px rgba(0, 0, 255, .2);
+}
+/* MENUBAR */
+
+/* DEPOSIT */
+.view_deposit{
+    color:white;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.view_deposit_pad1{
+    padding-left:50px;
+}
+
+.view_deposit_pad3{
+    padding-left:52px;
+}
+
+.view_deposit_pad4{
+    padding-left:10px;
+}
+
+.view_deposit_pad5{
+    padding-left:92px;
+}
+
+.view_deposit_pad6{
+    padding-left:150px;
+}
+ 
+.drop_down_period{
+    margin-left: 10px;
+} 
+
+.combobox_period{
+    padding-right: 40px;
+}
+
+.entry_deposit_interest_amount{
+    min-width: 10px;
+    margin-left: 13px;
+}
+
+.button_add_rate{
+    margin-left: 10px;
+    background: rgb(20, 189, 20);
+    color: white;
+    border: none;
+    font-weight: 600;
+    transition: 0.2s linear;
+}
+
+.button_add_rate:hover{
+    background: rgb(48, 236, 48);
+}
+
+.button_rem_rate{
+    margin-left: 10px;
+    background: rgb(210, 30, 30);
+    color: white;
+    border: none;
+    font-weight: 600;
+    transition: 0.2s linear;
+}
+
+.button_rem_rate:hover{
+    background: rgb(245, 71, 71);
+}
+
+.show_list_rate{
+    border: none;
+    margin-left: 10px;
+    background: #1e90ff;
+    color : white;
+    font-weight: 600;
+    transition: 0.4s linear;
+}
+
+.show_list_rate:hover{
+    background: #00f9ff;
+}
+
+.check_button_cap{
+    color: white;
+    font-size: 15px;
+}
+
+.periodicity_view{
+    color:white;
+    font-size: 20px;
+}
+
+.peroidicity_cap{
+    color:white;
+    font-size: 17px;
+    padding-right: 15px;
+}
+
+.button_solve{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: white;
+    border: none;
+    background: #1E90FF;
+    font-size: 20px;
+    transition: 0.4s linear;
+}
+
+.button_solve:hover{
+    background: #6495ED;
+    color: white;
+}
+
+.output_result_deposit{
+    color:white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.output_deposit_pad_1{
+    padding-right: 20px; 
+} 
+
+.output_deposit_pad_2{
+    padding-left: 70px; 
+    font-size: 22px;
+}
+
+.output_deposit_pad_3{
+    padding-left: 152px; 
+    font-size: 22px;
+}
+
+.error_deposit{
+    font-size: 40px;
+    font-weight: 700;
+    color: red;
+    font-family: Luminary ;
+}
+/* DEPOSIT */
+
+
+/* CREDIT */
+
+.view_credit{
+    color:white;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.check_button_annui{
+    color:white;
+    font-size: 15px;
+}
+
+.calculate_credit{
+    background: #1E90FF;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    border: none;
+}
+
+.calculate_credit:hover{
+    background: #6495ED;
+    color: white;
+}
+
+.view_credit_pad1{
+    padding-left: 159px;
+}
+
+.view_credit_pad2{
+    padding-left: 180px;
+}
+
+.view_credit_pad3{
+    padding-left: 110px;
+}
+
+.type_payment{
+    padding-right: 15px;
+}
+
+.check_button_annui_p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.monthly_payment{
+    padding-left: 75px;
+}
+
+.monthly_payment_output{
+    padding-right: 140px;
+}
+
+.interest_charges{
+    padding-top:20px;
+    padding-left: 44px;
+    padding-bottom:20px;
+}
+
+.debt_plus_interest{
+    padding-left: 133px;
+}
+
+.error_credit{
+    font-size: 60px;
+    font-weight: 700;
+    color: red;
+    font-family: Luminary ;
+}
+
+/* CREDIT */
+
+/* GRAPH */
+.entry_graph{
+    min-width: 90px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.domain{
+    color: white;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.error_graph{
+    margin-top: 40px;
+    font-size: 35px;
+    font-weight: 600;
+    color: red;
+    font-family: Luminary ;
+}
+/* GRAPH */
+
+button.button_regular{
+    min-height: 75px;
+    min-width:  60px;
+    background: #2c2e2d;
+    font-size: 20px;
+    font-weight:600;
+    color: white;
+    border-radius: 0px; 
+    border: none; 
+    transition: 0.6s linear;
+}
+
+button.button_input{
+    background: #2c2e2d ;
+    color: white ;
+    min-height: 85px;
+    min-width:  70px;
+    font-size: 20px;
+    font-weight:600;
+    border-radius: 0px; 
+    border: none; 
+    transition: 0.6s linear;
+}
+
+button.button_input:hover{
+    background: white;
+}
+
+button.button_x_value{
+    background: #383838;
+    color: #808080;
+    font-size: 18px;
+    border-radius: 0px; 
+    border: none; 
+    transition: 0.6s linear;
+}
+
+button.button_white{
+    background: white;
+    color: black;
+    min-height: 75px;
+    min-width:  60px;
+    font-size: 20px;
+    font-weight:600;
+    border-radius: 0px; 
+    border: none; 
+    transition: 0.6s linear;
+}
+
+button.button_white:hover{
+    background: #2c2e2d ;
+    color: white;
+    padding-bottom: 2px;
+}
+
+button.button_orange{
+    background: #ff9900;
+    color: black;
+    min-height: 75px;
+    min-width:  60px;
+    font-size: 25px;
+    font-weight:600;
+    border-radius: 0px; 
+    border: none; 
+    transition: 0.6s linear;
+}
+
+button.button_mod{
+    font-size: 20px;
+}
+
+button.button_orange:hover{
+    background: white ;
+    color: #2c2e2d;
+    padding-bottom: 2px;
+
+}
+
+button:hover{
+    background: #808080 ;
+    padding-bottom: 2px;
+    color: black;
+}
